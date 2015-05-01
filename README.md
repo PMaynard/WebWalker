@@ -5,13 +5,18 @@ This code is based on the work by (Mikko Ohtamaa)[https://opensourcehacker.com/2
 
 ## Install
 
+#### Requirements
+
+
+[Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)
+
 #### Linux
 
-sudo apt-get install python-(scrapy)[http://doc.scrapy.org/en/latest/intro/install.html]
-sudo easy_install service_identity
-sudo easy_install pyPdf
+	sudo apt-get install python-scrapy
+	sudo easy_install service_identity
+	sudo easy_install pyPdf
 
-## How to run WekWalker
+#### How to run WekWalker
 
 	./run.sh
 
