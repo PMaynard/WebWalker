@@ -8,8 +8,8 @@ This code is based on the work by [Mikko Ohtamaa](https://opensourcehacker.com/2
 #### Requirements
 
 
-[Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)
-[Service Identity](https://pypi.python.org/pypi/service_identity)
+[Scrapy](http://doc.scrapy.org/en/latest/intro/install.html)  
+[Service Identity](https://pypi.python.org/pypi/service_identity)  
 
 #### Linux
 
