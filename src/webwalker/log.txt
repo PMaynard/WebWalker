@@ -1,0 +1,19 @@
+Crawled 100 pages
+Violation number 1
+URL http://www.bbc.co.uk/news/entertainment-arts-31828184/comments?comments_page=117&filter=none&initial_page_size=10&sortBy=Created&sortOrder=Descending
+Violating text:ICS
+Position:106241
+Sample text around position:da818a","csrftoken":"F8DC7ZApQf\/LiIPIWzICSjh+fTyZAOT6hK8FMVi2GXybplMLObEW0jEqOs
+Saved.
+------
+Crawled 200 pages
+Crawled 300 pages
+Crawled 400 pages
+Crawled 500 pages
+Crawled 600 pages
+Crawled 700 pages
+Crawled 800 pages
+Crawled 900 pages
+Crawled 1000 pages
+Crawled 1100 pages
+Crawled 1200 pages

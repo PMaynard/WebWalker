@@ -1,0 +1,858 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+	<!--
+	generated 1 seconds ago
+	generated in 0.621 seconds
+	served from batcache in 0.003 seconds
+	expires in 299 seconds
+-->
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>¿Podemos probar la protección contra ataques dirigidos? | Naked Security</title>
+
+				
+		<meta name="google" content="notranslate">
+		<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/favicon.ico">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="publisher" href="https://plus.google.com/107512733802574023624/">
+		<link rel="stylesheet" type="text/css" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/style.css">
+		<link rel="pingback" href="https://sophosnews.wordpress.com/xmlrpc.php">
+		<!-- Conditional style sheets to fix styling issues in IE6/7 -->
+		<!--[if IE 6]>
+			<link type="text/css" rel="stylesheet" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/ie6.css">
+		<![endif]-->
+		<!--[if IE 7]>
+			<link type="text/css" rel="stylesheet" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/ie7.css">
+		<![endif]-->
+
+		<meta name="google-site-verification" content="I9dHFo-YhnK2MfAHn-20V4GnWrOttVUYyISGamyU41M">
+<meta name="msvalidate.01" content="7D8D1FA2892142B1543D2CBCD07FB88F">
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=nakedsecurity.sophos.com&amp;id=15254721&amp;t=1427389447&amp;back=https%3A%2F%2Fnakedsecurity.sophos.com%2Fes%2F2014%2F03%2F12%2Fcan-we-test-protection-against-targeted-attacks%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Feed" href="https://nakedsecurity.sophos.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Comments Feed" href="https://nakedsecurity.sophos.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; ¿Podemos probar la protección contra ataques dirigidos? Comments Feed" href="https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??-eJx9j9EKwjAMRX/IGpVO8EH8lq7GrlvalDVjv28mKoqyt3vDOQmBuRjPWTALpMkUmkLMFSgOWKFHKc4P5tG2vtYN/Mc9j6jzVJwsRMJrdEiYFFvTUjm+rCV2eut5JkJmiarUd1hbFJANsXcSOX8VcyMXxzV1xJY4aAyg1Ef9kaTThyp0FgJx62gBLum8twdrm92pafo7pF17OA==' type='text/css' media='all'>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Sophos = {"ajaxurl":"https:\/\/nakedsecurity.sophos.com\/wp-admin\/admin-ajax.php","nonce":"2d1b32899d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyNj1EOgjAMQC/kWFASw4fxLHNU6GDdXDcInt4ZMcFogl9N29e+Vk5eaEcRKErD0roLDiASQ1BtrgmkqysM72TmkPSQGuAnaG4JwryETUBYbIOKUFikN7yyesfRAnNW/uh+qpBGhGkTMxC90r0IwHj/2ho7yD45opfsfOeYYFpdXWjnevx/6pUVpHpoGHQKGOfl1bM9ldX+UB3rsq7MA28Lias='></script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all'>
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all'>
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sophosnews.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<link rel='prev' title='Tras las huellas de avanzada Amenazas Persistentes ...' href='https://nakedsecurity.sophos.com/es/2014/03/11/on-the-trail-of-advanced-persistent-threats/'>
+<link rel='next' title='التصحيح الثلاثاء الختامية، مارس 2014 - الإصلاحات الهامة من Microsoft و Adobe' href='https://nakedsecurity.sophos.com/ar/2014/03/12/patch-tuesday-wrap-up-march-2014-critical-fixes-from-microsoft-and-adobe/'>
+<meta name="generator" content="WordPress.com">
+<link rel='canonical' href='https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/'>
+<link rel='shortlink' href='http://wp.me/p120rT-12Jh'>
+<link rel="alternate" type="application/json+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2Fes%2F2014%2F03%2F12%2Fcan-we-test-protection-against-targeted-attacks%2F&amp;for=wpcom-auto-discovery"><link rel="alternate" type="application/xml+oembed" href="https://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2Fes%2F2014%2F03%2F12%2Fcan-we-test-protection-against-targeted-attacks%2F&amp;for=wpcom-auto-discovery">
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="¿Podemos probar la protección contra ataques dirigidos?">
+<meta property="og:url" content="https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/">
+<meta property="og:description" content=" En mi trabajo diario como un probador de soluciones anti-malware, a menudo me preguntan la misma pregunta: ¿cómo puedo planificar para probar contra Amenazas Avanzadas Persistentes, también conoci...">
+<meta property="article:published_time" content="2014-03-12T11:24:18+00:00">
+<meta property="article:modified_time" content="2014-03-12T11:29:40+00:00">
+<meta property="og:site_name" content="Naked Security">
+<meta property="og:image" content="https://sophosnews.files.wordpress.com/2014/03/target_ss.jpg">
+<meta property="og:image" content="https://sophosnews.files.wordpress.com/2014/03/padlocks_ss.jpg">
+<meta property="og:image" content="https://sophosnews.files.wordpress.com/2014/03/utm-500.png">
+<meta property="og:locale" content="en_US">
+<meta name="twitter:image" content="https://sophosnews.files.wordpress.com/2014/03/target_ss.jpg?w=240">
+<meta name="twitter:card" content="summary">
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom">
+<link rel='openid.server' href='https://sophosnews.wordpress.com/?openidserver=1'>
+<link rel='openid.delegate' href='https://sophosnews.wordpress.com/'>
+<link rel="search" type="application/opensearchdescription+xml" href="https://nakedsecurity.sophos.com/osd.xml" title="Naked Security">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="Naked Security"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Computer Security News, Advice and Research"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://nakedsecurity.sophos.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><style type="text/css" id="syntaxhighlighteranchor"></style>
+		<script type="text/javascript">
+
+			/* Setup a Google Analytics command stack to track the page view */
+			window._gaq = window._gaq || [];
+
+			// Add data to the .sophos.com profile
+			_gaq.push(
+				['_setAccount', 'UA-737537-1'],
+				['_setDomainName', '.sophos.com'],
+				['_setAllowLinker', true],
+				['_setAllowHash', false],
+				['_trackPageview', '/nakedsecurity'+window.location.pathname+window.location.search]
+			);
+
+			// Add data to the independent profile
+			_gaq.push(
+				['ns._setAccount', 'UA-737537-25'],
+				['ns._trackPageview']
+			);
+
+			jQuery(function () {
+                            try {
+    				window.sophosGaGuidStore.processGaToken({
+        				useGoogleVid: true,
+        				outputDebug: false,
+        				gaScope: 1,
+        				gaNamespace: 'ns',
+        				gaAccount: 'UA-737537-25'
+                            });
+                            } catch (e) {
+				// do nothing
+                            }
+			});
+
+			/* Create the appropriate Google Analytics script element */
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+            <meta name="msvalidate.01" content="D40C7646E4220DFB555112071FD858E4" />
+	</head>
+	<body class="single single-translation postid-248823 mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+            <div class="xp"></div>
+                <div id="printHeader"><img src="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/sophos-logo.gif" width="126" height="50" alt="Antivirus and Security Software from Sophos"></div>
+
+		<div id="wrapper" class="hfeed">
+			<div id="header">
+                            <a rel="home" href="/" title="Naked Security - Award-winning computer security, news, opinion, advice and research from SOPHOS">
+                                                                    <span class="title">Naked <em>Security</em></span>
+                                                                <small >Award-winning computer security news from <span class="replace logo sophos">Sophos</span></small>
+                            </a>
+				<a class="mothership" rel="nofollow" href="http://www.sophos.com/" title="SOPHOS"></a>
+				<div title="Hi" class="robot">
+				</div>
+				<div id="game-container"></div>
+				<div class="navigation">
+					<ul id="menu-category-menu" class="menu"><li id="menu-item-31599" class="menu-item menu-item-type-taxonomy menu-item-object-category current-translation-ancestor current-menu-parent current-translation-parent menu-item-31599"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/">Malware</a></li>
+<li id="menu-item-31533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31533"><a href="https://nakedsecurity.sophos.com/category/organisations/apple/">Mac</a></li>
+<li id="menu-item-187396" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187396"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/">Facebook</a></li>
+<li id="menu-item-187828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187828"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/">Android</a></li>
+<li id="menu-item-147074" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147074"><a href="https://nakedsecurity.sophos.com/category/security-threats/vulnerability/">Vulnerability</a></li>
+<li id="menu-item-31368" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31368"><a href="https://nakedsecurity.sophos.com/category/security-threats/data-loss/">Data loss</a></li>
+<li id="menu-item-147073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147073"><a href="https://nakedsecurity.sophos.com/category/privacy/">Privacy</a></li>
+<li id="menu-item-27702" class="more menu-item menu-item-type-custom menu-item-object-custom menu-item-27702"><a href="/categories">More...</a></li>
+</ul>					<form action="/" id="searchform" method="get" role="search">
+						<label for="s" class="screen-reader-text">Search for:</label>
+						<input class="text" onclick="if (this.value == 'search articles') this.value=''" type="text" size="5" id="s" name="s" value="search articles">
+						<input class="submit" type="submit" value="" id="searchButton">
+					</form>
+				</div>
+				<ul class="social">
+					<li><a class="facebook" rel="nofollow" href="https://www.facebook.com/SophosSecurity" title="Join over 170,000 people in our Facebook community"></a></li><li><a
+					class="twitter" rel="nofollow" href="https://twitter.com/#!/NakedSecurity" title="Follow our team of security experts on Twitter"></a></li><li><a
+					class="youtube" rel="nofollow" href="https://www.youtube.com/user/SophosLabs" title="Take a look at the SophosLabs YouTube channel"></a></li><li><a
+                                        class="gplus" rel="nofollow" href="https://plus.google.com/107512733802574023624" rel="publisher" title="Join our Google+ community"></a></li><li><a
+					class="linkedin" rel="nofollow" href="https://www.linkedin.com/groups?about=&amp;gid=4023910" title="Join the Naked Security discussion group on LinkedIn"></a></li><li><a
+					class="rss" rel="nofollow" href="/feed" title="Subscribe to our RSS feed"></a></li>
+				</ul>
+			</div><!-- #header -->
+                        <div class="share-rail">
+	<!-- Facebook -->
+	<iframe class="facebook" src="https://www.facebook.com/plugins/like.php?href=https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/&amp;layout=box_count&amp;height=63&amp;width=49"
+        scrolling="no" frameborder="0"
+        style="border:none; width:49px; height:63px"></iframe>
+
+    <!-- Place this tag where you want the share button to render. -->
+    <div class="g-plus" data-action="share" data-annotation="vertical-bubble" data-height="60" data-href="https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/"></div>
+    
+    <!-- Place this tag after the last share tag. -->
+    <script type="text/javascript">
+      (function() {
+        var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+        po.src = 'https://apis.google.com/js/plusone.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+      })();
+    </script>
+
+    <!-- Twitter -->
+    <iframe class="twitter" allowtransparency="true" frameborder="0" scrolling="no"
+    src="https://platform.twitter.com/widgets/tweet_button.html?count=vertical&amp;url=https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/&amp;related=NakedSecurity&amp;text=¿Podemos probar la protección contra ataques dirigidos?"
+    style="width:60px; height:62px;"></iframe>
+
+    <!-- Reddit -->
+    <iframe class="reddit" width="60" scrolling="no" height="70" frameborder="0" src="https://pay.reddit.com/static/button/button2.html?width=69&amp;url=https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/"></iframe>
+
+    <!-- LinkedIn -->
+    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+     lang: en_US
+    </script>
+    <script type="IN/Share"></script>
+
+    <!-- Pocket -->
+    <iframe class="pocket" scrolling="no" width="60" height="22" frameborder="0"
+	src="https://widgets.getpocket.com/v1/button?label=pocket&amp;count=none&amp;v=1&amp;url=https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/" allowtransparency="true"></iframe>
+</div>                                                       
+				<div id="main">
+				
+<div id="container">
+	<div id="content" role="main">
+
+		
+		<div id="post-248823" class="post-248823 translation type-translation status-publish hentry category-featured category-malware category-security-threats">
+
+			<div id="nav-above" class="navigation">
+				<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/es/2014/03/11/on-the-trail-of-advanced-persistent-threats/" rel="prev"><span class="previous-arrow"></span> Tras las huellas de avanzada Amenazas Persistentes ...</a></div>
+				<div class="nav-next"><a href="https://nakedsecurity.sophos.com/ar/2014/03/12/patch-tuesday-wrap-up-march-2014-critical-fixes-from-microsoft-and-adobe/" rel="next">التصحيح الثلاثاء الختامية، مارس 2014 - الإصلاحات الهامة من Microsoft و Adobe <span class="next-arrow"></span></a></div>
+			</div><!-- #nav-above -->
+
+				<p class="disclaimer">This article is an automated machine-translation of an <a href="https://nakedsecurity.sophos.com/2014/03/12/can-we-test-protection-against-targeted-attacks/">article in English</a>. We know the translation isn't perfect, but we hope it's useful for people who don't read English.</p>
+				<h1 class="entry-title">¿Podemos probar la protección contra ataques dirigidos?</h1>
+			
+			<div class="entry-meta">
+						by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/johnhawes/" title="View all posts by John Hawes">John Hawes</a></span> on March 12, 2014				<span class="meta-sep">|</span>
+						<a href="https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/#respond" title="Comment on ¿Podemos probar la protección contra ataques dirigidos?">Leave a comment</a>									</div><!-- .entry-meta -->
+
+			<div class="entry-utility">
+						<p><span class="post-categories-label">Filed Under:</span> <a href="https://nakedsecurity.sophos.com/category/featured/" rel="category tag">Featured</a>, <a href="https://nakedsecurity.sophos.com/category/security-threats/malware/" rel="category tag">Malware</a>, <a href="https://nakedsecurity.sophos.com/category/security-threats/" rel="category tag">Security threats</a></p>			</div><!-- .entry-utility -->
+
+			<div class="entry-content">
+						<p><img src="https://sophosnews.files.wordpress.com/2014/03/target_ss.jpg?w=640" alt="Objetivo. Imagen cortesía de Shutterstock."   class="alignright size-full wp-image-248816"> En mi trabajo diario como un probador de soluciones anti-malware, desde hace algún tiempo que he estado recibiendo la misma pregunta por todo tipo de personas. Ellos quieren saber cómo planeo probar contra <a title="Definición Sophos Threatsaurus de APT" href="http://www.sophos.com/en-us/threat-center/threat-analyses/threatsaurus/a-to-z-of-threats/a/advanced-persistent-threat.aspx?cmp=70130000001xGqlAAE">Amenazas Avanzadas Persistentes</a> , también conocido como <a href="http://www.youtube.com/watch?v=5fuKH5XkNYk" title="You Tube - las amenazas de seguridad de red explican: amenazas persistentes avanzadas" rel="nofollow">APT</a> . </p>
+<p> Puede parecer una pregunta obvia - APT se consideran un problema importante que afecta a las organizaciones más grandes, por lo general implican el malware de algún tipo, por lo que deben ser capaces de comparar qué tan bien los diferentes productos que manejan. </p>
+<p> Pero los ataques dirigidos son muy diferentes de su malware de todos los días, y la protección de las pruebas en contra de ellos resulta ser un tipo muy diferente de la tarea. </p>
+<h4> Terminología Persistente Avanzada </h4>
+<p> La frase &quot;amenaza persistente avanzada&quot; ha estado alrededor por algún tiempo. </p>
+<p> El más comúnmente citado <a title="NetworkWorld sobre las definiciones de la APT" href="http://www.networkworld.com/news/2011/020111-advanced-persistent-threat.html" rel="nofollow">historia del origen</a> se remonta a 2006, cuando los investigadores de la Fuerza Aérea de los EE.UU. se dice que han acuñado el término. </p>
+<p> Realmente llegó a ser de uso común a principios de 2010, sin embargo, cuando la &quot; <a title="Naked Security en Aurora" href="https://nakedsecurity.sophos.com/2010/01/18/security-roundup-google-adobe-0-day-flaw/">Operación Aurora</a> campaña &quot;penetró redes a <a title="Naked Security en Aurora y Google" href="https://nakedsecurity.sophos.com/2010/01/14/google-china-censorship-hacking/">Google</a> , <a title="Naked Security en Aurora y Adobe" href="https://nakedsecurity.sophos.com/2010/01/14/adobe-confirms-hit-googlechina-hacking-case/">Adobe</a> y otras empresas de renombre. </p>
+<p> El término fue tomada de inmediato y con entusiasmo por los medios de comunicación y tipos de marketing, y como tal era, por supuesto, rotundamente rechazada por la gente técnica más como una mera palabra de moda la publicidad, bastante innecesario cuando el término estándar &quot;ataque dirigido&quot; suficientemente cubierto las amenazas involucradas. </p>
+<p> Desde entonces ha sido adoptado bastante general para referirse a los ataques hechos a mano, a largo plazo en las organizaciones más grandes. </p>
+<p> Cuando <a title="Naked Security de Stuxnet" href="https://nakedsecurity.sophos.com/2010/10/06/stuxnet-hype-what-do-i-need-to-know/">Stuxnet</a> fue descubierto, se convirtió en un TEA arquetípico. </p>
+<p> Fue dirigido a un objetivo bien protegida específica, generalmente aceptado ser los sistemas de control de procesamiento nuclear iraní, que fue adaptada para penetrar en ese objetivo, mediante el uso de memorias USB para saltar huecos de aire, y tenía una capacidad de carga diseñado para tener un efecto particular al destino, al parecer para sesgar el funcionamiento de centrifugadoras de procesamiento de combustible y potencialmente destruirlos. </p>
+<p> Tal vez es esta asociación la que ha confundido el tema. El Stuxnet visto por el mundo era un elemento específico de malware, y parece que en muchas mentes la idea de un TEA se ha mantenido así de simple - un solo ejecutable que puede romper en algún lugar, encontrar su camino alrededor y llevar a cabo su misión. </p>
+<p> La realidad es que la mayoría de las APT, Stuxnet incluido, se parecen más a las actividades del equipo a largo plazo que una sola vez, los ataques de un solo hombre. Las actividades incluirán diferentes personas haciendo diferentes cosas en diferentes etapas, con todas sus acciones y los datos que se reúnen entretejen para producir el resultado final. </p>
+<p> Algunas de las etapas implicará elementos reales de malware, algunos requieren más práctico, en tiempo real, la piratería y la exploración de las redes de una puerta trasera, y algunos serán mucho más humana, como meter físicamente en torno a un edificio que alberga los sistemas que pueden ser apuntado. </p>
+<h4> Ataques y Técnicas de Prevención </h4>
+<p> Las amenazas &quot;dirigidas a&quot; los usuarios domésticos y las empresas más pequeñas no están realmente te dirigen a todos - no les importa quién eres o lo que haces, lo que quieren es entrar en el equipo y cosechar sus <a title="Naked Security en Gozi arrestos de malware bancario" href="https://nakedsecurity.sophos.com/2013/01/24/bank-raiding-malware-crimes-three-men-charged-in-new-york/">detalles de inicio de sesión de banco</a> , de la aspiración de <a title="Naked Security de malware en el punto de venta" href="https://nakedsecurity.sophos.com/2013/07/16/a-look-at-point-of-sale-ram-scraper-malware-and-how-it-works/">las transacciones de pago</a> , bloqueo de seguridad de archivos y <a title="Naked Security en CryptoLocker de malware" href="https://nakedsecurity.sophos.com/2013/10/18/cryptolocker-ransomware-see-how-it-works-learn-about-prevention-cleanup-and-recovery/">exigir un rescate</a> , o simplemente alquilar tiempo en su máquina para los spammers. </p>
+<p> Por lo tanto, se puede elegir una solución anti-malware de propósito general, y puede basar su elección en factores estándar como el precio, la calidad de apoyo, y el rendimiento en pruebas comparativas. Un producto que proporciona un mejor rango de protección contra todo tipo de ataques que ofrece una mejor oportunidad de evitar ser golpeado por cualquier cosa. </p>
+<p> Ampliar empresarial y las instituciones están en posiciones muy diferentes sin embargo. </p>
+<p><img src="https://sophosnews.files.wordpress.com/2014/03/padlocks_ss.jpg?w=640" alt="Candados. Imagen cortesía de Shutterstock."   class="alignright size-full wp-image-248815"> Todos, desde <a title="Naked Security en el incumplimiento Target" href="https://nakedsecurity.sophos.com/2013/12/20/target-confirms-crooks-may-have-spent-holiday-shopping-season-feasting-on-40m-filched-payment-cards/">los minoristas</a> a <a title="Naked Security en Adobe código fuente incumplimiento" href="https://nakedsecurity.sophos.com/2013/10/05/adobe-source-code-breach-is-it-a-gateway-for-new-malware-and-exploits/">las casas de software</a> a <a title="Naked Security en 2011 el contratista de defensa hackeo" href="https://nakedsecurity.sophos.com/2011/09/19/mitsubishi-defense-contractor-hack/">los contratistas de defensa</a> a <a title="Naked Security de medidas de seguridad de bolsa" href="https://nakedsecurity.sophos.com/2013/12/18/stock-exchanges-of-the-world-form-central-cyber-security-working-group/">los operadores bursátiles</a> se ejecutará redes mucho más grandes, más complejas y de mayor valor, a través de múltiples sitios, con los datos y las capacidades que podrían ser enormemente valiosa si cayeran en las manos equivocadas. </p>
+<p> Por supuesto, todavía necesitan para protegerse contra el malware cotidiana de amplio espectro, y es probable que se basan en la alta calidad anti-malware para ayudarles a hacerlo. </p>
+<p> Probablemente tendrán una protección multi-capa en el escritorio y en las pasarelas. Ellos han utilizado pruebas independientes para ayudar a elegir qué productos usar demasiado, tal vez un peso de hasta dos <a title="Naked Security para las pruebas comparativas" href="https://nakedsecurity.sophos.com/2013/04/30/how-to-rate-comparative-anti-virus-test/">comparativas</a> y <a title="Naked Security sobre sistemas de certificación anti-malware" href="https://nakedsecurity.sophos.com/2013/04/19/how-do-you-know-if-an-anti-virus-test-is-any-good/">certificación</a> de datos. </p>
+<p> Por supuesto, para ellos, factores como el apoyo y las instalaciones de gestión escalables tendrán mucho más peso de lo que sería para las pequeñas empresas o individuos. </p>
+<p> Pero ellos también tienen una gran cantidad de otras medidas de seguridad también. Reglas sofisticadas de cortafuegos, zonas desmilitarizadas, sistemas de detección de intrusos, prevención de fuga de datos, una cuidadosa asignación de derechos de acceso, investigación de antecedentes del personal, <a title="Naked Security sobre los riesgos de seguridad del contratista" href="https://nakedsecurity.sophos.com/2013/12/09/are-contractors-the-weak-link-in-your-security-chain/">contratistas</a> y visitantes, y todo tipo de medidas de seguridad física entran en juego cuando se trata de bloquear ataques dirigidos. </p>
+<p> El punto sobre ataques muy concretos, incluyendo las APT, es que va a tomar todos estos factores en cuenta al diseñar su estrategia de ataque. </p>
+<p> Si se sabe que tiene un cristal antibalas, ellos no van a intentar tirar un ladrillo a través de una ventana, si saben de alertas del monitor el comportamiento de su AV en ciertos cambios en el registro, no lo van a hacer esos cambios hasta que hayan deshabilitado o subvertido el AV. </p>
+<h4> Pruebas de protección real </h4>
+<p> Entonces, ¿cómo podemos probar qué tan bien las soluciones anti-malware realizan contra los ataques dirigidos? </p>
+<p> Claro, podemos tomar un montón de archivos que se sabe que se han utilizado en los ataques dirigidos en el pasado, y compara la detección de ellos por varias soluciones, pero esto tendrá poco valor. </p>
+<p> Nunca seremos capaces de decir &quot;Producto X le habría protegido contra Ataque Z&quot;, simplemente porque si hubieras estado utilizando X del producto en lugar de producto Y, Z Ataque habría tomado una forma diferente. Hubiera sido ajustado para asegurarse de que tiene alrededor de cualquier producto barreras X acondicionados. </p>
+<p> Una cosa que podemos hacer es tratar de averiguar con qué facilidad los productos pueden ser anuladas o subvertidas, mediante la creación de nuevo malware o atacar a los componentes de la solución. </p>
+<p> La moralidad de la primera es dudosa (firmas antimalware odian cuando crea nuevas muestras para que puedan hacer frente a, dada la cantidad de cosas en el mundo real a aparecer cada segundo), y la segunda es, uno esperaría, realiza todo el tiempo como parte de la GC en la casa y el endurecimiento. </p>
+<p> La eficacia de ambos como una métrica de prueba también es sospechoso. Podríamos hacer una lista de una docena de maneras de derribar una solución, y los productos de los tipos de cuantos se mostraron inmunes a, pero no hay diciendo que los chicos detrás Attack Z no se van a plantear con otro método nunca pensamos, lo utilizan como su primer intento y batir con éxito el producto nos clasificado superior. </p>
+<p> El punto de estos agujeros es que nadie piensa en ellos hasta que alguien piensa en ellos. </p>
+<p> La única forma real de medir la capacidad de resistencia a las APT es la prueba de la penetración de un sitio o sistema totalmente asegurado-, comprobando cada hoyo potencial que se pueda imaginar para ver si está cubierto, pero de nuevo esto depende de la pentester ser por lo menos tan bien informado, bien recursos y creativo como cualquier posible atacante. </p>
+<p> Este tipo de pruebas no es también muy útil como guía para los demás sobre lo que debe hacer. Incluso si se pudiera resumir todas las medidas en vigor en un sitio encontrado a ser bastante segura, sería casi imposible para asegurar que usted podría reproducir esa configuración exacta en un lugar diferente con diferentes personas, necesidades y comportamientos. </p>
+<h4> Evitar posibles tragedias </h4>
+<p> Hay todo tipo de soluciones que ofrecen para proteger de ataques APT, y para todos ellos es igualmente difícil de validar su rendimiento gracias a la naturaleza incognoscible de ataques potenciales. </p>
+<p> No importa lo duro que un juego de esclusas que usted pone en su lugar, si usted tiene algo que alguien quiere bastante mal, van a seguir recogiendo distancia hasta que encuentran una salida. </p>
+<p> Incluso si sus protecciones tecnológicas prueban demasiado duro de roer que es probable que haya otros vectores - no hay muchos productos que prometen mantener sus administradores de sistemas a salvo de chantaje o la hipnosis, por ejemplo. </p>
+<p> Al final, la mejor manera de asegurarse de que sus defensas son tan fuertes, ya que pueden ser es seguir las mejores prácticas establecidas, utilizando el conjunto más completo de protecciones y asegurarse de que se aplican y mantienen adecuadamente. </p>
+<p> Cada vez que una nueva penetración se lleva a cabo, por lo menos una que no se basa en algún tipo de error o descuido, es vital que la información sobre lo que salió mal es compartida de modo que esas prácticas pueden ampliarse y actualizarse. </p>
+<p> Cuando la lucha contra un enemigo invisible, es difícil proteger todos los ángulos, tal vez incluso conocer todos los ángulos que deben custodiar, sino aprender de los errores de los que nos rodean nos convierte en el más duro posible tuerca de roer. </p>
+<p> <span class="notranslate"></span> <br> <span class="notranslate"></span> </p>
+<p> <a href="http://www.sophos.com/en-us/products/unified-threat-management/demo.aspx?utm_source=Non-campaign&amp%3Butm_medium=Cross-link&amp%3Butm_campaign=NakSec-CL&cmp=70130000001xGqlAAE"><img src="https://sophosnews.files.wordpress.com/2014/03/utm-500.png?w=500&#038;h=137" alt="" width="500" height="137" style="margin:0;padding:0;"></a> </img></p>
+<p style="font-size:85%;"> <em>Imágenes de <a href="http://www.shutterstock.com/pic.mhtml?id=165668978" title="Objetivo. Imagen cortesía de Shutterstock.">blanco</a> y <a href="http://www.shutterstock.com/pic.mhtml?id=103378814" title="Candados. Imagen cortesía de Shutterstock.">candados</a> cortesía de <a href="http://www.shutterstock.com/" title="Shutterstock página de inicio">Shutterstock</a> .</em> </p>
+						<a id="attribution" class="Google" href="http://translate.google.com/"></a>									</div><!-- .entry-content -->
+
+			<div class="entry-utility">
+									</div><!-- .entry-utility -->
+
+            <div class="nps-jail">
+                <a name="pd_a_5700808"></a>
+<div class="PDS_Poll" id="PDI_container5700808" style="display:inline-block;"></div>
+<div id="PD_superContainer"></div>
+<script type="text/javascript" charset="UTF-8" src="//static.polldaddy.com/p/5700808.js"></script>
+<noscript><a href="http://polldaddy.com/poll/5700808">Take Our Poll</a></noscript>            </div>
+			
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/es/2014/03/11/on-the-trail-of-advanced-persistent-threats/" rel="prev"><span class="previous-arrow"></span> Tras las huellas de avanzada Amenazas Persistentes ...</a></div>
+				<div class="nav-next"><a href="https://nakedsecurity.sophos.com/ar/2014/03/12/patch-tuesday-wrap-up-march-2014-critical-fixes-from-microsoft-and-adobe/" rel="next">التصحيح الثلاثاء الختامية، مارس 2014 - الإصلاحات الهامة من Microsoft و Adobe <span class="next-arrow"></span></a></div>
+			</div><!-- #nav-above -->
+
+		</div><!-- #post-## -->
+		
+			<div id="comments">
+
+
+
+						<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/es/2014/03/12/can-we-test-protection-against-targeted-attacks/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="https://sophosnews.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="dde6239ca2" /><input type="hidden" name="_wp_http_referer" value="/es/2014/03/12/can-we-test-protection-against-targeted-attacks/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="https://s0.wp.com/i/mu.gif" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name</label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s0.wp.com/i/mu.gif" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s0.wp.com/i/mu.gif" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="https://s0.wp.com/i/mu.gif" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	</div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" class="submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='248823' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="05eaa96e71" /></p>
+<input type="hidden" name="genseq" value="1427389447" />
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="243"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>
+</div><!-- #comments -->
+                    <div id="entry-author-info">
+                        <div id="author-avatar">
+                        <img alt='' src='https://1.gravatar.com/avatar/ddc68597a13afd2029c449c6fb6d68c2?s=60&#038;d=https%3A%2F%2Fs0.wp.com%2Fi%2Fmu.gif&#038;r=G' class='avatar avatar-60' height='60' width='60' />                        </div>
+                        <!-- #author-avatar -->
+                        <div id="author-description">
+                            <h2>About the author</h2>
+                            John Hawes is Chief of Operations at <a href="http://www.virusbtn.com">Virus Bulletin</a>, running independent anti-malware testing there since 2006. With over a decade of experience testing security products, John was elected to the board of directors of the Anti-Malware Testing Standards Organisation (<a href="http://www.amtso.org">AMTSO</a>) in 2011.                            <div id="author-link">
+                                <a
+                                    href="https://nakedsecurity.sophos.com/author/johnhawes/">
+                                    View all posts by John Hawes                                </a>
+                            </div>
+                            <!-- #author-link   -->
+                        </div>
+                        <!-- #author-description -->
+                    </div>
+                    <!-- #entry-author-info -->
+                		
+	</div><!-- #content -->
+</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="facebook-likebox-3" class="widget-container widget_facebook_likebox"><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FSophosSecurity&#038;width=200&#038;height=110&#038;colorscheme=light&#038;show_faces=false&#038;stream=false&#038;show_border=true&#038;header=false&#038;force_wall=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 200px;  height: 110px; background: #fff"></iframe></li><li id="text-2" class="widget-container widget_text">			<div class="textwidget"><a style="display:block;overflow:hidden;margin-bottom:1em;" href="http://www.sophos.com/en-us/lp/compliancecheck/questionnaire.aspx?cmp=701j0000000KZhHAAW"><img src="https://sophosnews.files.wordpress.com/2015/01/sophos_60_second_compliance_check_246x500px_na.png"></a></div>
+		</li><li class="sophos-widget related">
+                <h2>Related articles</h2>
+                <ul>
+                                    </ul>
+            </li><li class="sophos-widget free-tools">
+                <h2>Free tools</h2>
+                <ul>
+                    <li class="android">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">Mobile Security for Android</a></h3>
+            <ul class="features">
+                <li>Scans apps for malware</li>
+                <li>Remote lock and wipe </li>
+                <li>Detection from the cloud</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="mac">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">Antivirus for Mac</a></h3>
+            <ul class="features">
+                <li>Clears viruses and Trojans</li>
+                <li>Stops all threats, even new ones</li>
+                <li>Installs easily and runs quietly</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="virus">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">Virus Removal Tool</a></h3>
+            <ul class="features">
+                <li>Removes viruses and rootkits</li>
+                <li>Windows XP SP2 and up</li>
+                <li>Works with existing antivirus</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="utm">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">UTM Home Edition</a></h3>
+            <ul class="features">
+                <li>Fully-equipped UTM</li>
+                <li>Network, web, mail and VPN</li>
+                <li>Protects 50 IP addresses</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="firewall">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">UTM Essential Firewall</a></h3>
+            <ul class="features">
+                <li>Network security for business</li>
+                <li>No user/IP limitations</li>
+                <li>Upgrade to full UTM</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>                </ul>
+            </li><li class="sophos-widget popular">
+                <h2>Hot this week</h2>
+                <ul>
+                    <li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/thought-your-private-phone-photos-werent-on-facebook-think-again/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/photos-2502.png?w=115" class="attachment-115x115 wp-post-image" alt="photos-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/thought-your-private-phone-photos-werent-on-facebook-think-again/">Thought your private phone photos weren’t on Facebook? Think again…</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/23/microsofts-project-spartan-browser-will-replace-internet-explorer-but-slowly/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/project-spartan-250.png?w=115" class="attachment-115x115 wp-post-image" alt="Project Spartan" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/23/microsofts-project-spartan-browser-will-replace-internet-explorer-but-slowly/">Microsoft's Project Spartan browser will replace Internet Explorer - but slowly</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/dark-webs-evolution-market-vanishes-along-with-12-million/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/evolution-250-ss_128237366.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Dark Web&#039;s &#039;Evolution&#039; market vanishes along with $12 million" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/dark-webs-evolution-market-vanishes-along-with-12-million/">Dark Web's 'Evolution' market vanishes along with $12 million</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/19/apple-issues-update-to-recent-os-x-update/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/apple-2501.png?w=115" class="attachment-115x115 wp-post-image" alt="" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/19/apple-issues-update-to-recent-os-x-update/">Apple issues update to recent OS X update</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/24/are-smartphones-bad-for-our-kids/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/child-mobile-250-ss_256063456.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Therapist says mobile phones add to skyrocketing rate of child suicide" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/24/are-smartphones-bad-for-our-kids/">Are smartphones bad for our kids?</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/nypd-cop-arrested-for-hacking-into-fbi-traffic-databases/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/nypd_ss_250.jpg?w=115" class="attachment-115x115 wp-post-image" alt="NYPD. Image courtesy of pisaphotography/Shutterstock." /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/nypd-cop-arrested-for-hacking-into-fbi-traffic-databases/">NYPD cop arrested for hacking into FBI, traffic databases</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/24/will-artificial-intelligence-keep-humans-as-pets/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/woz.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Woz" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/24/will-artificial-intelligence-keep-humans-as-pets/">Will Artificial Intelligence keep humans as pets?</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/firewall-china-ss_204157051-250.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Anti-censorship China activists face daily $30,000 DDoS bill" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/">Greatfire.org faces daily $30,000 bill from DDoS attack</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/25/google-glass-isnt-dead-its-being-fine-tuned-for-the-masses/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/google-glass-250-ss-ed_242068195.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Google Glass isn&#039;t dead. It&#039;s being fine-tuned for the masses" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/25/google-glass-isnt-dead-its-being-fine-tuned-for-the-masses/">Google Glass isn't dead. It's being fine-tuned for the masses</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/23/convicted-identity-thief-caught-after-posting-selfie-on-twitter/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/social-security-thief-250-ss_48106810.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Convicted identity thief caught after posting selfies on Twitter" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/23/convicted-identity-thief-caught-after-posting-selfie-on-twitter/">Convicted identity thief caught after posting selfie on Twitter</a></h3>
+</div>
+</li>                </ul>
+            </li><div class="ctranslate"><h3 class="widget-title">Translations</h3><ul><li><a href="https://nakedsecurity.sophos.com/ar/2014/03/12/can-we-test-protection-against-targeted-attacks/">يمكننا اختبار الحماية ضد الهجمات المستهدفة؟</a></li><li><a href="https://nakedsecurity.sophos.com/zh/2014/03/12/can-we-test-protection-against-targeted-attacks/">我们可以测试的保护，防止有针对性的攻击？</a></li><li><a href="https://nakedsecurity.sophos.com/ko/2014/03/12/can-we-test-protection-against-targeted-attacks/">우리는 표적 공격에 대한 보호 기능을 테스트 할 수 있습니까?</a></li><li><a href="https://nakedsecurity.sophos.com/pt/2014/03/12/can-we-test-protection-against-targeted-attacks/">Podemos testar a proteção contra ataques direcionados?</a></li><li><a href="https://nakedsecurity.sophos.com/ru/2014/03/12/can-we-test-protection-against-targeted-attacks/">Можем ли мы проверить защиту от направленных атак?</a></li><li><a href="https://nakedsecurity.sophos.com/es/2014/03/12/can-we-test-protection-against-targeted-attacks/">¿Podemos probar la protección contra ataques dirigidos?</a></li></ul></div>			</ul>
+		</div><!-- #primary .widget-area -->
+
+		</div><!-- #main -->
+	<br class="clear">
+	</div><!-- #wrapper -->
+
+	<div id="footer">
+		<div class="content">
+		<div class="top">
+			<ul class="us">
+				<li><a rel="nofollow" href="/about">About Naked Security</a></li>
+				<li><a rel="nofollow" href="http://www.sophos.com/en-us/about-us.aspx">About Sophos</a></li>
+				<li><a rel="nofollow" href="/authors">Our Authors</a></li>
+				<li><a rel="nofollow" href="/about/#awards">Awards</a></li>
+				<li><a rel="nofollow" href="/about/#tip">Got a story for us?</a></li>
+			</ul>
+			<ul class="social">
+				<li><a rel="nofollow" class="facebook"
+					href="http://www.facebook.com/SophosSecurity"
+					title="Join over 170,000 people in our Facebook community"></a></li>
+				<li><a rel="nofollow" class="twitter" href="https://twitter.com/#!/NakedSecurity"
+					title="Follow our team of security experts on Twitter"></a></li>
+				<li><a rel="nofollow" class="youtube" href="http://www.youtube.com/user/SophosLabs"
+					title="Take a look at the SophosLabs YouTube channel"></a></li>
+				<li><a rel="nofollow" class="gplus"
+                    href="https://plus.google.com/107512733802574023624"
+					title="Join our Google+ community"></a></li>
+				<li><a rel="nofollow" class="linkedin"
+					href="http://www.linkedin.com/groups?about=&amp;gid=4023910"
+					title="Join the Naked Security discussion group on LinkedIn"></a></li>
+				<li><a rel="nofollow" class="rss" href="/feed"
+					title="Subscribe to our RSS feed"></a></li>
+				<li><a rel="nofollow" class="email"
+					href="https://nakedsecurity.sophos.com/about/#newsletter"
+					title="Sign up to our daily newsletter"></a></li>
+			</ul>
+		</div>
+		<div class="column naked-security">
+				<div class="labels">
+					<h3>Tags</h3>
+					<div class="tags">
+						<div style="overflow:hidden"><a href='https://nakedsecurity.sophos.com/tag/adobe/' class='tag-link-29691' title='207 topics' style='font-size: 10.692307692308pt;'>Adobe</a>
+<a href='https://nakedsecurity.sophos.com/tag/android/' class='tag-link-641922' title='230 topics' style='font-size: 11.410256410256pt;'>Android</a>
+<a href='https://nakedsecurity.sophos.com/tag/anonymous/' class='tag-link-17835' title='148 topics' style='font-size: 8pt;'>anonymous</a>
+<a href='https://nakedsecurity.sophos.com/tag/apple/' class='tag-link-291' title='396 topics' style='font-size: 15.717948717949pt;'>Apple</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-breach/' class='tag-link-67372' title='164 topics' style='font-size: 8.8974358974359pt;'>data breach</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-loss-2/' class='tag-link-36277601' title='161 topics' style='font-size: 8.7179487179487pt;'>data loss</a>
+<a href='https://nakedsecurity.sophos.com/tag/ddos/' class='tag-link-64500' title='150 topics' style='font-size: 8.1794871794872pt;'>DDoS</a>
+<a href='https://nakedsecurity.sophos.com/tag/encryption/' class='tag-link-6474' title='150 topics' style='font-size: 8.1794871794872pt;'>Encryption</a>
+<a href='https://nakedsecurity.sophos.com/tag/exploit/' class='tag-link-78999' title='284 topics' style='font-size: 13.025641025641pt;'>Exploit</a>
+<a href='https://nakedsecurity.sophos.com/tag/facebook/' class='tag-link-81819' title='890 topics' style='font-size: 22pt;'>Facebook</a>
+<a href='https://nakedsecurity.sophos.com/tag/general/' class='tag-link-54' title='712 topics' style='font-size: 20.205128205128pt;'>General</a>
+<a href='https://nakedsecurity.sophos.com/tag/google/' class='tag-link-81' title='346 topics' style='font-size: 14.641025641026pt;'>Google</a>
+<a href='https://nakedsecurity.sophos.com/tag/hacking/' class='tag-link-1816' title='339 topics' style='font-size: 14.461538461538pt;'>hacking</a>
+<a href='https://nakedsecurity.sophos.com/tag/iphone/' class='tag-link-106595' title='169 topics' style='font-size: 9.0769230769231pt;'>iPhone</a>
+<a href='https://nakedsecurity.sophos.com/tag/it/' class='tag-link-3072' title='252 topics' style='font-size: 12.128205128205pt;'>IT</a>
+<a href='https://nakedsecurity.sophos.com/tag/malware/' class='tag-link-15593' title='785 topics' style='font-size: 21.102564102564pt;'>Malware</a>
+<a href='https://nakedsecurity.sophos.com/tag/microsoft/' class='tag-link-637' title='351 topics' style='font-size: 14.820512820513pt;'>Microsoft</a>
+<a href='https://nakedsecurity.sophos.com/tag/password/' class='tag-link-37471' title='175 topics' style='font-size: 9.4358974358974pt;'>password</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch/' class='tag-link-51546' title='165 topics' style='font-size: 8.8974358974359pt;'>Patch</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch-tuesday/' class='tag-link-341283' title='161 topics' style='font-size: 8.7179487179487pt;'>Patch Tuesday</a>
+<a href='https://nakedsecurity.sophos.com/tag/phishing/' class='tag-link-21013' title='212 topics' style='font-size: 10.871794871795pt;'>phishing</a>
+<a href='https://nakedsecurity.sophos.com/tag/privacy/' class='tag-link-3279' title='424 topics' style='font-size: 16.25641025641pt;'>Privacy</a>
+<a href='https://nakedsecurity.sophos.com/tag/scam/' class='tag-link-26037' title='311 topics' style='font-size: 13.74358974359pt;'>Scam</a>
+<a href='https://nakedsecurity.sophos.com/tag/spam/' class='tag-link-652' title='648 topics' style='font-size: 19.487179487179pt;'>Spam</a>
+<a href='https://nakedsecurity.sophos.com/tag/twitter/' class='tag-link-599182' title='390 topics' style='font-size: 15.538461538462pt;'>Twitter</a>
+<a href='https://nakedsecurity.sophos.com/tag/video/' class='tag-link-412' title='199 topics' style='font-size: 10.333333333333pt;'>Video</a>
+<a href='https://nakedsecurity.sophos.com/tag/vulnerability-2/' class='tag-link-35821136' title='456 topics' style='font-size: 16.794871794872pt;'>vulnerability</a>
+<a href='https://nakedsecurity.sophos.com/tag/web/' class='tag-link-151' title='226 topics' style='font-size: 11.410256410256pt;'>web</a>
+<a href='https://nakedsecurity.sophos.com/tag/web-2-0/' class='tag-link-3161794' title='301 topics' style='font-size: 13.564102564103pt;'>web 2.0</a>
+<a href='https://nakedsecurity.sophos.com/tag/www/' class='tag-link-4326' title='161 topics' style='font-size: 8.7179487179487pt;'>WWW</a></div>					</div>
+					<h3>Categories</h3>
+					<ul class="categories">
+							<li class="cat-item cat-item-29691"><a href="https://nakedsecurity.sophos.com/category/organisations/adobe/" >Adobe</a> (967)
+</li>
+	<li class="cat-item cat-item-154348"><a href="https://nakedsecurity.sophos.com/category/technologies/adobe-flash/" >Adobe Flash</a> (458)
+</li>
+	<li class="cat-item cat-item-641922"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/" >Android</a> (1,187)
+</li>
+	<li class="cat-item cat-item-103188"><a href="https://nakedsecurity.sophos.com/category/audio-and-video/" >Audio and Video</a> (28)
+</li>
+	<li class="cat-item cat-item-8224"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/blackberry/" >BlackBerry</a> (134)
+</li>
+	<li class="cat-item cat-item-25818"><a href="https://nakedsecurity.sophos.com/category/cryptography/" >Cryptography</a> (1,564)
+</li>
+	<li class="cat-item cat-item-785703"><a href="https://nakedsecurity.sophos.com/category/security-threats/data-loss/" >Data loss</a> (5,341)
+</li>
+	<li class="cat-item cat-item-81819"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/" >Facebook</a> (3,131)
+</li>
+	<li class="cat-item cat-item-23380578"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/fake-anti-virus/" >Fake anti-virus</a> (115)
+</li>
+	<li class="cat-item cat-item-81"><a href="https://nakedsecurity.sophos.com/category/organisations/google/" >Google</a> (2,382)
+</li>
+	<li class="cat-item cat-item-10625068"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/google-chrome/" >Google Chrome</a> (394)
+</li>
+	<li class="cat-item cat-item-1143"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/internet-explorer/" >Internet Explorer</a> (693)
+</li>
+	<li class="cat-item cat-item-120"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/" >Mobile</a> (1,585)
+</li>
+	<li class="cat-item cat-item-348240"><a href="https://nakedsecurity.sophos.com/category/celebrities/nude-celebrities/" >Nude Celebrities</a> (229)
+</li>
+	<li class="cat-item cat-item-3766"><a href="https://nakedsecurity.sophos.com/category/organisations/oracle/" >Oracle</a> (341)
+</li>
+	<li class="cat-item cat-item-78541"><a href="https://nakedsecurity.sophos.com/category/organisations/" >Organisations</a> (67)
+</li>
+	<li class="cat-item cat-item-47759"><a href="https://nakedsecurity.sophos.com/category/technologies/pdf/" >PDF</a> (89)
+</li>
+	<li class="cat-item cat-item-89084086"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/phishing-malware/" >Phishing</a> (864)
+</li>
+	<li class="cat-item cat-item-75697342"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/ransomware-malware/" >Ransomware</a> (396)
+</li>
+	<li class="cat-item cat-item-36117"><a href="https://nakedsecurity.sophos.com/category/social-networks/" >Social networks</a> (2,622)
+</li>
+	<li class="cat-item cat-item-652"><a href="https://nakedsecurity.sophos.com/category/security-threats/spam/" >Spam</a> (2,962)
+</li>
+	<li class="cat-item cat-item-7859"><a href="https://nakedsecurity.sophos.com/category/technologies/" >Technologies</a> (37)
+</li>
+	<li class="cat-item cat-item-20650"><a href="https://nakedsecurity.sophos.com/category/security-threats/vulnerability/" >Vulnerability</a> (5,184)
+</li>
+	<li class="cat-item cat-item-26885"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/" >Web Browsers</a> (415)
+</li>
+	<li class="cat-item cat-item-800"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/windows/" >Windows</a> (882)
+</li>
+					</ul>
+				</div>
+				<div class="months">
+					<h3>Archives by month</h3>
+					<ul>
+							<li><a href='https://nakedsecurity.sophos.com/2015/03/'>March 2015</a>&nbsp;(93)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/02/'>February 2015</a>&nbsp;(108)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/01/'>January 2015</a>&nbsp;(109)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/12/'>December 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/11/'>November 2014</a>&nbsp;(87)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/10/'>October 2014</a>&nbsp;(98)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/09/'>September 2014</a>&nbsp;(93)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/08/'>August 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/07/'>July 2014</a>&nbsp;(104)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/06/'>June 2014</a>&nbsp;(97)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/05/'>May 2014</a>&nbsp;(101)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/04/'>April 2014</a>&nbsp;(96)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/03/'>March 2014</a>&nbsp;(96)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/02/'>February 2014</a>&nbsp;(86)</li>
+					</ul>
+					<p><a href="/archive/">More...</a></p>
+				</div> <!-- .monthly -->
+			</div> <!-- .column -->
+			<div class="column sophos">
+				<h3>Download some free tools</h3>
+				<ul class="tools">
+					<li><strong><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx">Free anti-virus for your Mac</a></strong><small>Free antivirus that works simply and beautifully</small></li>
+       				<li><strong><a href="https://play.google.com/store/apps/details?id=com.sophos.smsec">Free Android protection</a></strong><small>Free antivirus for all your Android devices</small></li>
+					<li><a href="http://www.sophos.com/en-us/products/free-tools.aspx">More free tools...</a></li>
+				</ul>
+				<h3>Take a look at our products</h3>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/endpoint.aspx">Endpoint</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/encryption.aspx">Encryption</a></li>
+				</ul>
+				<ul class="products">
+			   	 	<li><a href="http://www.sophos.com/en-us/products/mobile.aspx">Mobile</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/network.aspx">Network</a></li>
+				</ul>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/email.aspx">Email</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/web.aspx">Web</a></li>
+				</ul>
+				<p>Try out our <a href="http://www.sophos.com/en-us/products/free-trials.aspx">free trials</a> and <a href="http://www.sophos.com/en-us/products/product-demos.aspx">demos</a></p>
+				<h3>Investigate the threats</h3>
+				<ul class="threats">
+					<li><a href="http://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware.aspx">Virus and spyware analyses</a></li>
+					<li><a href="http://www.sophos.com/en-us/threat-center.aspx">Threat Center</a></li>
+					<li><a href="http://www.sophos.com/en-us/why-sophos/our-people/inside-sophoslabs.aspx">Inside SophosLabs</a></li>
+				</ul>
+			</div>
+		</div> <!-- .content -->
+		<div id="blog-footer" role="contentinfo">
+			<div id="colophon">
+				<ul>
+					<li>&copy; 1997-2015 Sophos Ltd. All rights reserved</li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/blogs.html">Legal</a></li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/privacy.html">Privacy</a></li>
+                    <li><a rel="nofollow" href="/cookies-and-scripts/">Cookies</a></li>
+                    <li><a rel="nofollow" href="/disclaimers/">Disclaimers</a></li>
+                    <li><a href="http://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="https://s0.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-light-small.png" width="187" height="26" alt="Powered by WordPress.com VIP"></a></li>
+				</ul>
+			</div><!-- #colophon -->
+		</div><!-- #blog-footer -->
+	</div> <!-- #footer -->
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	<div class="grofile-hash-map-ddc68597a13afd2029c449c6fb6d68c2">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/sophosnews.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/sophosnews.wordpress.com\/wp-login.php?action=logout&_wpnonce=406b2ccf24","homeURL":"https:\/\/nakedsecurity.sophos.com\/","postID":"248823","gravDefault":"blank","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1424115551j'></script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/akismet-3.0/_inc/form.js?m=1404442431g'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"1","is_front_page":"0","is_archive":"0","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJxtjcEKwjAQRH/IZElRpAfxW8p2kQ3JJibZ2vy9KSh48DQD82YGXtlgkkbSwFdYaWOkvFtfTzAiFgy6Uj0y/1QqHZQ/zipbTIVsZPnHY4pxzJpCOfRf6PsX1eSgD5YKk9k4H6UhZpEl9MZYR+Eeb+7s3HW+zG7ybxhvPvA='></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?44" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'15254721','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'15254721','v':'wpcom','tz':'0','user_id':'0','post':'248823','subd':'sophosnews'}]);
+function st_vt() {var x=document.createElement("img");x.src="https://pixel.wp.com/g.gif?blog=15254721&v=wpcomvt&tz=0&user_id=0&post=248823&subd=sophosnews&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTcwcit4OCtUVUJKS3xUYWdKLXB0XUxnbnphSTBWLCxKVS9sK3MzLkpFbmpOZE55RDg2Nk9lV2RWWHlYayVmMW5mS3QrX3QybjZfaHdwYk5YfFVNSTFmP2NEWmVxbl9WU1N2aE9RdyU/Jlo5eHlNZjEuL2Q3cGNCeCw0aWpufngsQ0RIVTEsenhbckYyNWg5eVR1b2U4L1hRb01sMERGaUIwcHY2JmpdaWxqfDd6QXJfZ1ZyOHdpRU9tb34zci0yNWVxb0RWT2hBcA=='}]);
+_stq.push([ 'clickTrackerInit', '15254721', '248823' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

@@ -1,0 +1,1111 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+	<!--
+	generated 4 seconds ago
+	generated in 0.456 seconds
+	served from batcache in 0.002 seconds
+	expires in 296 seconds
+-->
+<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Denial of Service | Naked Security</title>
+
+				
+		
+		<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/favicon.ico">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="publisher" href="https://plus.google.com/107512733802574023624/">
+		<link rel="stylesheet" type="text/css" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/style.css">
+		<link rel="pingback" href="https://sophosnews.wordpress.com/xmlrpc.php">
+		<!-- Conditional style sheets to fix styling issues in IE6/7 -->
+		<!--[if IE 6]>
+			<link type="text/css" rel="stylesheet" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/ie6.css">
+		<![endif]-->
+		<!--[if IE 7]>
+			<link type="text/css" rel="stylesheet" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/ie7.css">
+		<![endif]-->
+
+		<meta name="keywords" content="denial of service">
+<meta name="google-site-verification" content="I9dHFo-YhnK2MfAHn-20V4GnWrOttVUYyISGamyU41M">
+<meta name="msvalidate.01" content="7D8D1FA2892142B1543D2CBCD07FB88F">
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=nakedsecurity.sophos.com&amp;id=15254721&amp;t=1427389428&amp;back=https%3A%2F%2Fnakedsecurity.sophos.com%2Fcategory%2Fsecurity-threats%2Fdenial-of-service-security-threats%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Feed" href="https://nakedsecurity.sophos.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Comments Feed" href="https://nakedsecurity.sophos.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Denial of Service Category Feed" href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s0.wp.com/_static/??-eJx9j9EKwjAMRX/IGpVO8EH8lq7GrlvalDVjv28mKoqyt3vDOQmBuRjPWTALpMkUmkLMFSgOWKFHKc4P5tG2vtYN/Mc9j6jzVJwsRMJrdEiYFFvTUjm+rCV2eut5JkJmiarUd1hbFJANsXcSOX8VcyMXxzV1xJY4aAyg1Ef9kaTThyp0FgJx62gBLum8twdrm92pafo7pF17OA==' type='text/css' media='all'>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Sophos = {"ajaxurl":"https:\/\/nakedsecurity.sophos.com\/wp-admin\/admin-ajax.php","nonce":"2d1b32899d"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??-eJyNj1EOgjAMQC/kWFASw4fxLHNU6GDdXDcInt4ZMcFogl9N29e+Vk5eaEcRKErD0roLDiASQ1BtrgmkqysM72TmkPSQGuAnaG4JwryETUBYbIOKUFikN7yyesfRAnNW/uh+qpBGhGkTMxC90r0IwHj/2ho7yD45opfsfOeYYFpdXWjnevx/6pUVpHpoGHQKGOfl1bM9ldX+UB3rsq7MA28Lias='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sophosnews.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress.com">
+<link rel='openid.server' href='https://sophosnews.wordpress.com/?openidserver=1'>
+<link rel='openid.delegate' href='https://sophosnews.wordpress.com/'>
+<link rel="search" type="application/opensearchdescription+xml" href="https://nakedsecurity.sophos.com/osd.xml" title="Naked Security">
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="Naked Security"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Computer Security News, Advice and Research"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://nakedsecurity.sophos.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><style type="text/css" id="syntaxhighlighteranchor"></style>
+		<script type="text/javascript">
+
+			/* Setup a Google Analytics command stack to track the page view */
+			window._gaq = window._gaq || [];
+
+			// Add data to the .sophos.com profile
+			_gaq.push(
+				['_setAccount', 'UA-737537-1'],
+				['_setDomainName', '.sophos.com'],
+				['_setAllowLinker', true],
+				['_setAllowHash', false],
+				['_trackPageview', '/nakedsecurity'+window.location.pathname+window.location.search]
+			);
+
+			// Add data to the independent profile
+			_gaq.push(
+				['ns._setAccount', 'UA-737537-25'],
+				['ns._trackPageview']
+			);
+
+			jQuery(function () {
+                            try {
+    				window.sophosGaGuidStore.processGaToken({
+        				useGoogleVid: true,
+        				outputDebug: false,
+        				gaScope: 1,
+        				gaNamespace: 'ns',
+        				gaAccount: 'UA-737537-25'
+                            });
+                            } catch (e) {
+				// do nothing
+                            }
+			});
+
+			/* Create the appropriate Google Analytics script element */
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+            <meta name="msvalidate.01" content="D40C7646E4220DFB555112071FD858E4" />
+	</head>
+	<body class="archive category category-denial-of-service-security-threats category-115992436 mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+            <div class="xp"></div>
+                <div id="printHeader"><img src="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/sophos-logo.gif" width="126" height="50" alt="Antivirus and Security Software from Sophos"></div>
+
+		<div id="wrapper" class="hfeed">
+			<div id="header">
+                            <a rel="home" href="/" title="Naked Security - Award-winning computer security, news, opinion, advice and research from SOPHOS">
+                                                                    <span class="title">Naked <em>Security</em></span>
+                                                                <small >Award-winning computer security news from <span class="replace logo sophos">Sophos</span></small>
+                            </a>
+				<a class="mothership" rel="nofollow" href="http://www.sophos.com/" title="SOPHOS"></a>
+				<div title="Hi" class="robot">
+				</div>
+				<div id="game-container"></div>
+				<div class="navigation">
+					<ul id="menu-category-menu" class="menu"><li id="menu-item-31599" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31599"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/">Malware</a></li>
+<li id="menu-item-31533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31533"><a href="https://nakedsecurity.sophos.com/category/organisations/apple/">Mac</a></li>
+<li id="menu-item-187396" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187396"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/">Facebook</a></li>
+<li id="menu-item-187828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187828"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/">Android</a></li>
+<li id="menu-item-147074" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147074"><a href="https://nakedsecurity.sophos.com/category/security-threats/vulnerability/">Vulnerability</a></li>
+<li id="menu-item-31368" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31368"><a href="https://nakedsecurity.sophos.com/category/security-threats/data-loss/">Data loss</a></li>
+<li id="menu-item-147073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147073"><a href="https://nakedsecurity.sophos.com/category/privacy/">Privacy</a></li>
+<li id="menu-item-27702" class="more menu-item menu-item-type-custom menu-item-object-custom menu-item-27702"><a href="/categories">More...</a></li>
+</ul>					<form action="/" id="searchform" method="get" role="search">
+						<label for="s" class="screen-reader-text">Search for:</label>
+						<input class="text" onclick="if (this.value == 'search articles') this.value=''" type="text" size="5" id="s" name="s" value="search articles">
+						<input class="submit" type="submit" value="" id="searchButton">
+					</form>
+				</div>
+				<ul class="social">
+					<li><a class="facebook" rel="nofollow" href="https://www.facebook.com/SophosSecurity" title="Join over 170,000 people in our Facebook community"></a></li><li><a
+					class="twitter" rel="nofollow" href="https://twitter.com/#!/NakedSecurity" title="Follow our team of security experts on Twitter"></a></li><li><a
+					class="youtube" rel="nofollow" href="https://www.youtube.com/user/SophosLabs" title="Take a look at the SophosLabs YouTube channel"></a></li><li><a
+                                        class="gplus" rel="nofollow" href="https://plus.google.com/107512733802574023624" rel="publisher" title="Join our Google+ community"></a></li><li><a
+					class="linkedin" rel="nofollow" href="https://www.linkedin.com/groups?about=&amp;gid=4023910" title="Join the Naked Security discussion group on LinkedIn"></a></li><li><a
+					class="rss" rel="nofollow" href="/feed" title="Subscribe to our RSS feed"></a></li>
+				</ul>
+			</div><!-- #header -->
+                        			<div id="main">
+				
+		<div id="container">
+			<div id="content" role="main">
+				<h1 class="page-title">Denial of Service</h1><p class="feeds">(get it in <a rel="nofollow" href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/?feed=rss2">RSS</a> or <a rel="nofollow" href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/?feed=atom">Atom</a>)</p>
+				
+<div id="nav-above" class="navigation">
+	<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/page/2/" >Older posts</a></div>
+	<div class="nav-next"></div>
+</div><!-- #nav-above -->
+
+
+
+<div id="post-283153" class="post-283153 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured tag-activists tag-great-firewall-of-china tag-greatfire tag-internet-censorship tag-mirrored-sites">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '0']); return true;" href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/" title="Permalink to Greatfire.org faces daily $30,000 bill from DDoS attack" rel="bookmark">Greatfire.org faces daily $30,000 bill from DDoS attack</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/leemunsonblog/" title="View all posts by Lee Munson">Lee Munson</a></span> on March 20, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/#respond" title="Comment on Greatfire.org faces daily $30,000 bill from DDoS attack">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '0']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/firewall-china-ss_204157051-250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Anti-censorship China activists face daily $30,000 DDoS bill" /></a>
+		<p>GreatFire.org, a site that monitors websites blocked by the Great Firewall of China, has been hit with a massive DDoS attack.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F20%2Fgreatfire-org-faces-daily-30000-bill-from-ddos-attack%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Greatfire.org%20faces%20daily%20%2430%2C000%20bill%20from%20DDoS%20attack&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F20%2Fgreatfire-org-faces-daily-30000-bill-from-ddos-attack%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-280504" class="post-280504 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-microsoft category-sony category-twitter tag-ddos tag-john-smedley tag-lizard-squad tag-playstation tag-playstation-network tag-sony-online-entertainment tag-xbox">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '1']); return true;" href="https://nakedsecurity.sophos.com/2015/02/17/lizard-squad-returns-claims-attack-on-xbox-live-and-daybreak-games/" title="Permalink to Lizard Squad returns, claims attack on Xbox Live and Daybreak Games" rel="bookmark">Lizard Squad returns, claims attack on Xbox Live and Daybreak Games</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/leemunsonblog/" title="View all posts by Lee Munson">Lee Munson</a></span> on February 17, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/17/lizard-squad-returns-claims-attack-on-xbox-live-and-daybreak-games/#comments" title="Comment on Lizard Squad returns, claims attack on Xbox Live and Daybreak Games">1 Comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/17/lizard-squad-returns-claims-attack-on-xbox-live-and-daybreak-games/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '1']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/02/lizard_ss_250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Lizard. Image courtesy of Shutterstock." /></a>
+		<p>Hacking group Lizard Squad has returned, apparently disrupting Microsoft's Xbox Live service and Daybreak Games with DDoS attacks.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F17%2Flizard-squad-returns-claims-attack-on-xbox-live-and-daybreak-games%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Lizard%20Squad%20returns%2C%20claims%20attack%20on%20Xbox%20Live%20and%20Daybreak%20Games&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F17%2Flizard-squad-returns-claims-attack-on-xbox-live-and-daybreak-games%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-279905" class="post-279905 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-vulnerability tag-denial-of-service tag-dos tag-photoelectric-effect tag-raspberry-pi">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '2']); return true;" href="https://nakedsecurity.sophos.com/2015/02/11/most-adorable-bug-raspberry-pi-2-crashes-when-you-take-a-photo-of-it/" title="Permalink to &quot;Most adorable bug&quot; - Raspberry Pi 2 crashes when you take a photo of it" rel="bookmark">"Most adorable bug" - Raspberry Pi 2 crashes when you take a photo of it</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on February 11, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/11/most-adorable-bug-raspberry-pi-2-crashes-when-you-take-a-photo-of-it/#comments" title="Comment on &quot;Most adorable bug&quot; - Raspberry Pi 2 crashes when you take a photo of it">14 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/11/most-adorable-bug-raspberry-pi-2-crashes-when-you-take-a-photo-of-it/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '2']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/02/raspberry_ss_250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Raspberry. Image courtesy of Shutterstock." /></a>
+		<p>It's not buggy, it's camera-shy! The tiny, budget Raspberry Pi faints when you flash a photo of it, and it's likewise not keen on laser pointers.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F11%2Fmost-adorable-bug-raspberry-pi-2-crashes-when-you-take-a-photo-of-it%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=%22Most%20adorable%20bug%22%20-%20Raspberry%20Pi%202%20crashes%20when%20you%20take%20a%20photo%20of%20it&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F11%2Fmost-adorable-bug-raspberry-pi-2-crashes-when-you-take-a-photo-of-it%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-279924" class="post-279924 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-denial-of-service-security-threats category-featured category-internet-explorer category-malware category-microsoft category-vulnerability category-windows tag-exploit tag-ie tag-internet-explorer tag-jasbug tag-microsoft tag-patch tag-patch-tuesday tag-update-tuesday tag-vulnerability-2 tag-word tag-word-viewer">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '3']); return true;" href="https://nakedsecurity.sophos.com/2015/02/11/update-tuesday-wrap-up-february-2015-dont-let-jasbug-distract-you/" title="Permalink to Update Tuesday wrap-up, February 2015 - don&#039;t let JASBUG distract you" rel="bookmark">Update Tuesday wrap-up, February 2015 - don't let JASBUG distract you</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on February 11, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/11/update-tuesday-wrap-up-february-2015-dont-let-jasbug-distract-you/#comments" title="Comment on Update Tuesday wrap-up, February 2015 - don&#039;t let JASBUG distract you">1 Comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/11/update-tuesday-wrap-up-february-2015-dont-let-jasbug-distract-you/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '3']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/09/patch-tuesday-denim-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="patch-tuesday-denim-250" /></a>
+		<p>Be careful! </p>
+<p>The JASBUG vulnerability in Windows is grabbing the headlines, but there are other bugs this month that could hit you harder.</p>
+<p>Paul Ducklin explains...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F11%2Fupdate-tuesday-wrap-up-february-2015-dont-let-jasbug-distract-you%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Update%20Tuesday%20wrap-up%2C%20February%202015%20-%20don%27t%20let%20JASBUG%20distract%20you&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F11%2Fupdate-tuesday-wrap-up-february-2015-dont-let-jasbug-distract-you%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-279568" class="post-279568 post type-post status-publish format-standard has-post-thumbnail hentry category-adobe category-adobe-flash category-data-loss category-denial-of-service-security-threats category-featured category-linux category-malware category-podcast category-vulnerability tag-adobe tag-backport tag-buffer-overflow tag-chester-wisniewski tag-chet-chat tag-deauthentication tag-exploit tag-exploit-this tag-fcc tag-flash tag-gabor-szappanos tag-ghost tag-linux tag-marriott tag-paul-ducklin tag-research tag-sophos-security-chet-chat tag-sophoslabs-2 tag-sscc tag-szappanos tag-technology tag-vulnerability-2 tag-wi-fi">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '4']); return true;" href="https://nakedsecurity.sophos.com/2015/02/05/sscc-184-whats-the-lifespan-of-a-ghost-podcast/" title="Permalink to SSCC 184 - What&#039;s the lifespan of a GHOST? [PODCAST]" rel="bookmark">SSCC 184 - What's the lifespan of a GHOST? [PODCAST]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on February 5, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/05/sscc-184-whats-the-lifespan-of-a-ghost-podcast/#comments" title="Comment on SSCC 184 - What&#039;s the lifespan of a GHOST? [PODCAST]">4 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/05/sscc-184-whats-the-lifespan-of-a-ghost-podcast/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '4']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/chet-chat-logo-featured-2503.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="chet-chat-logo-featured-250" /></a>
+		<p>Our weekly security podcast - the latest news in 15 minutes, entertaining *and* educational.</p>
+<p>Enjoy!</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F05%2Fsscc-184-whats-the-lifespan-of-a-ghost-podcast%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=SSCC%20184%20-%20What%27s%20the%20lifespan%20of%20a%20GHOST%3F%20%5BPODCAST%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F05%2Fsscc-184-whats-the-lifespan-of-a-ghost-podcast%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-279475" class="post-279475 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-denial-of-service-security-threats category-featured category-ransomware-malware tag-denial-of-service tag-dos tag-extortion tag-phpbb tag-ransomware">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '5']); return true;" href="https://nakedsecurity.sophos.com/2015/02/04/new-style-ransomware-locks-out-your-customers-demands-money-to-let-them-log-back-in/" title="Permalink to New-style ransomware locks out your customers - demands money to let them log back in" rel="bookmark">New-style ransomware locks out your customers - demands money to let them log back in</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on February 4, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/04/new-style-ransomware-locks-out-your-customers-demands-money-to-let-them-log-back-in/#comments" title="Comment on New-style ransomware locks out your customers - demands money to let them log back in">7 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/04/new-style-ransomware-locks-out-your-customers-demands-money-to-let-them-log-back-in/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '5']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/02/key-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="key-250" /></a>
+		<p>The crooks took a low-key, annoyingly simple, and hard-to-spot approach. </p>
+<p>Change usernames like JIMMY to FKOVWH3Z7LUV, but hide the changes...for a while, anyway.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F04%2Fnew-style-ransomware-locks-out-your-customers-demands-money-to-let-them-log-back-in%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=New-style%20ransomware%20locks%20out%20your%20customers%20-%20demands%20money%20to%20let%20them%20log%20back%20in&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F04%2Fnew-style-ransomware-locks-out-your-customers-demands-money-to-let-them-log-back-in%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278743" class="post-278743 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-facebook category-featured tag-crash tag-facebook tag-instagram tag-lizard-squad">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '6']); return true;" href="https://nakedsecurity.sophos.com/2015/01/27/lizard-squad-took-down-facebook-believe-it-or-not/" title="Permalink to Lizard Squad took down Facebook and Instagram! Believe it! Or not..." rel="bookmark">Lizard Squad took down Facebook and Instagram! Believe it! Or not...</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 27, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/27/lizard-squad-took-down-facebook-believe-it-or-not/#comments" title="Comment on Lizard Squad took down Facebook and Instagram! Believe it! Or not...">5 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/27/lizard-squad-took-down-facebook-believe-it-or-not/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '6']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/dontcrash-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>The hacking-and-cracking crew known as Lizard Squad tweeted that Facebook and Instagram were down.</p>
+<p>Before you could say, "But we don't crash EVER," that had turned into "Lizard Squad did it"...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F27%2Flizard-squad-took-down-facebook-believe-it-or-not%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Lizard%20Squad%20took%20down%20Facebook%20and%20Instagram%21%20Believe%20it%21%20Or%20not...&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F27%2Flizard-squad-took-down-facebook-believe-it-or-not%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278034" class="post-278034 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-denial-of-service-security-threats category-featured category-law-order category-malware category-security-threats category-sony tag-breach tag-fbi tag-guardians-of-peace tag-north-korea tag-nsa tag-sony">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '7']); return true;" href="https://nakedsecurity.sophos.com/2015/01/19/why-the-us-was-so-sure-north-korea-hacked-sony-it-had-a-front-row-seat/" title="Permalink to Why the US was so sure North Korea hacked Sony: it had a front-row seat" rel="bookmark">Why the US was so sure North Korea hacked Sony: it had a front-row seat</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 19, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/19/why-the-us-was-so-sure-north-korea-hacked-sony-it-had-a-front-row-seat/#comments" title="Comment on Why the US was so sure North Korea hacked Sony: it had a front-row seat">17 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/19/why-the-us-was-so-sure-north-korea-hacked-sony-it-had-a-front-row-seat/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '7']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/us-nk_ss_250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="US and North Korea. Image courtesy of Shutterstock." /></a>
+		<p>A newly released, top-secret document traces the NSA's infiltration of North Korean systems back to 2010, when it piggybacked on South Korean "implants" on North Korea's networks and "sucked back the data".</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F19%2Fwhy-the-us-was-so-sure-north-korea-hacked-sony-it-had-a-front-row-seat%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Why%20the%20US%20was%20so%20sure%20North%20Korea%20hacked%20Sony%3A%20it%20had%20a%20front-row%20seat&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F19%2Fwhy-the-us-was-so-sure-north-korea-hacked-sony-it-had-a-front-row-seat%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278029" class="post-278029 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured tag-julius-kivimaki tag-lizard-squad tag-lizard-stresser tag-lizardstresser tag-vincent-omari">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '8']); return true;" href="https://nakedsecurity.sophos.com/2015/01/19/lizard-squads-ddos-service-hacked-buyers-details-revealed/" title="Permalink to Lizard Squad’s DDoS service hacked, buyers’ details revealed" rel="bookmark">Lizard Squad’s DDoS service hacked, buyers’ details revealed</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/leemunsonblog/" title="View all posts by Lee Munson">Lee Munson</a></span> on January 19, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/19/lizard-squads-ddos-service-hacked-buyers-details-revealed/#comments" title="Comment on Lizard Squad’s DDoS service hacked, buyers’ details revealed">5 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/19/lizard-squads-ddos-service-hacked-buyers-details-revealed/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '8']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/lizard_ss_250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Lizard. Image courtesy of Shutterstock." /></a>
+		<p>Lizard Squad, the group that took down the Sony PlayStation and Microsoft Xbox networks over the Christmas period, has received a dose of its own medicine with the news that it has itself been hacked.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F19%2Flizard-squads-ddos-service-hacked-buyers-details-revealed%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Lizard%20Squad%E2%80%99s%20DDoS%20service%20hacked%2C%20buyers%E2%80%99%20details%20revealed&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F19%2Flizard-squads-ddos-service-hacked-buyers-details-revealed%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-277915" class="post-277915 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-law-order category-security-threats category-sony category-twitter tag-opcharliehebdo tag-opfrance tag-anonymous tag-arnaud-coustilliere tag-charlie-hebdo tag-cyber-caliphate tag-cyberjihad tag-fallaga-team tag-france tag-middle-east-cyber-army">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '9']); return true;" href="https://nakedsecurity.sophos.com/2015/01/17/cyberjihadists-attack-thousands-of-french-websites-after-charlie-hebdo-massacre/" title="Permalink to Cyberjihadists attack thousands of French websites after Charlie Hebdo massacre" rel="bookmark">Cyberjihadists attack thousands of French websites after Charlie Hebdo massacre</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/johnzorabedian/" title="View all posts by John Zorabedian">John Zorabedian</a></span> on January 17, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/17/cyberjihadists-attack-thousands-of-french-websites-after-charlie-hebdo-massacre/#respond" title="Comment on Cyberjihadists attack thousands of French websites after Charlie Hebdo massacre">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/17/cyberjihadists-attack-thousands-of-french-websites-after-charlie-hebdo-massacre/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '9']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/france-targeted-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Cyberjihadists attack French websites" /></a>
+		<p>Many French websites have come under attack in the days since the bloody assault on the office of the satirical newspaper Charlie Hebdo and a Jewish grocery store last week, although rumours of mass DDoS appears to be untrue.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F17%2Fcyberjihadists-attack-thousands-of-french-websites-after-charlie-hebdo-massacre%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Cyberjihadists%20attack%20thousands%20of%20French%20websites%20after%20Charlie%20Hebdo%20massacre&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F17%2Fcyberjihadists-attack-thousands-of-french-websites-after-charlie-hebdo-massacre%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-277895" class="post-277895 post type-post status-publish format-standard has-post-thumbnail hentry category-botnet-malware category-denial-of-service-security-threats category-featured category-law-order category-microsoft category-sony tag-bust tag-cybercrime tag-ddos tag-lizard-squad tag-omari tag-playstation tag-police tag-xbox">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '10']); return true;" href="https://nakedsecurity.sophos.com/2015/01/16/cops-arrest-another-man-after-christmas-playstationxbox-ddos/" title="Permalink to Cops arrest another man after Christmas PlayStation/Xbox DDoS" rel="bookmark">Cops arrest another man after Christmas PlayStation/Xbox DDoS</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 16, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/16/cops-arrest-another-man-after-christmas-playstationxbox-ddos/#respond" title="Comment on Cops arrest another man after Christmas PlayStation/Xbox DDoS">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/16/cops-arrest-another-man-after-christmas-playstationxbox-ddos/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '10']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/arrest_ss_250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Arrest. Image courtesy of Shutterstock." /></a>
+		<p>Police have arrested a second man in connection with the Lizard Squad's Grinch-like Christmas attack on gamers.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F16%2Fcops-arrest-another-man-after-christmas-playstationxbox-ddos%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Cops%20arrest%20another%20man%20after%20Christmas%20PlayStation%2FXbox%20DDoS&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F16%2Fcops-arrest-another-man-after-christmas-playstationxbox-ddos%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-277467" class="post-277467 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-facebook category-featured category-security-threats category-social-networks category-twitter tag-opcharliehebdo tag-anonymous tag-censorship tag-charlie-hebdo">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '11']); return true;" href="https://nakedsecurity.sophos.com/2015/01/13/anonymous-launches-opcharliehebdo-attacks-terrorist-social-media/" title="Permalink to Anonymous launches #OpCharlieHebdo, attacks terrorist social media" rel="bookmark">Anonymous launches #OpCharlieHebdo, attacks terrorist social media</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 13, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/13/anonymous-launches-opcharliehebdo-attacks-terrorist-social-media/#comments" title="Comment on Anonymous launches #OpCharlieHebdo, attacks terrorist social media">17 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/13/anonymous-launches-opcharliehebdo-attacks-terrorist-social-media/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '11']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/opcharlie-250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Anonymous launches #OpCharlieHebdo, attacks terrorist social media" /></a>
+		<p>Those wearing the cloak of the loose online hacktivist collective of Anonymous have gone after sites and promise to target Twitter and Facebook accounts of terrorists. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F13%2Fanonymous-launches-opcharliehebdo-attacks-terrorist-social-media%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Anonymous%20launches%20%23OpCharlieHebdo%2C%20attacks%20terrorist%20social%20media&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F13%2Fanonymous-launches-opcharliehebdo-attacks-terrorist-social-media%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-277154" class="post-277154 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-denial-of-service-security-threats category-featured category-law-order category-malware category-security-threats category-sony tag-breach tag-fbi tag-guardians-of-peace tag-james-comey tag-north-korea tag-sony">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '12']); return true;" href="https://nakedsecurity.sophos.com/2015/01/09/sloppy-north-korean-sony-attackers-let-their-ip-addresses-slip-says-fbi/" title="Permalink to &#039;Sloppy&#039; North Korean Sony attackers let their IP addresses slip, says FBI" rel="bookmark">'Sloppy' North Korean Sony attackers let their IP addresses slip, says FBI</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 9, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/09/sloppy-north-korean-sony-attackers-let-their-ip-addresses-slip-says-fbi/#comments" title="Comment on &#039;Sloppy&#039; North Korean Sony attackers let their IP addresses slip, says FBI">4 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/09/sloppy-north-korean-sony-attackers-let-their-ip-addresses-slip-says-fbi/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '12']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/north-korean-fingerprint-ss_250_239537953.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="FBI: &#039;Sloppy&#039; North Korean Sony attackers let their IP addresses slip" /></a>
+		<p>FBI director James Comey has stuck to the bureau’s conclusion that the North Korean government is behind the mammoth cyber attack on Sony Pictures, giving out a few more crumbs to explain his conviction.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F09%2Fsloppy-north-korean-sony-attackers-let-their-ip-addresses-slip-says-fbi%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=%27Sloppy%27%20North%20Korean%20Sony%20attackers%20let%20their%20IP%20addresses%20slip%2C%20says%20FBI&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F09%2Fsloppy-north-korean-sony-attackers-let-their-ip-addresses-slip-says-fbi%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276815" class="post-276815 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-data-loss category-denial-of-service-security-threats category-featured category-law-order category-video tag-sophospuzzle tag-60-sec-security tag-60-second-security tag-60-seconds tag-60ss tag-bitcoin tag-btc tag-bust tag-cyberfraud tag-ddos tag-lizard-squad tag-mt-gox tag-paypal tag-playstation tag-xbox tag-xbox-live">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '13']); return true;" href="https://nakedsecurity.sophos.com/2015/01/03/the-mystery-of-the-missing-bitcoins-60-sec-security-video/" title="Permalink to The mystery of the missing Bitcoins - 60 Sec Security [VIDEO]" rel="bookmark">The mystery of the missing Bitcoins - 60 Sec Security [VIDEO]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 3, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/03/the-mystery-of-the-missing-bitcoins-60-sec-security-video/#respond" title="Comment on The mystery of the missing Bitcoins - 60 Sec Security [VIDEO]">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/03/the-mystery-of-the-missing-bitcoins-60-sec-security-video/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '13']); return true;"><img width="115" height="115" src="https://i1.wp.com/sophosnews.files.wordpress.com/2014/06/60ss-video-250.png?crop=39px%2C38px%2C169px%2C169px&amp;resize=115%2C115" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Here's this week's 60 Second Security video for your viewing pleasure.</p>
+<p>Enjoy...watch the news in just one minute!</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F03%2Fthe-mystery-of-the-missing-bitcoins-60-sec-security-video%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=The%20mystery%20of%20the%20missing%20Bitcoins%20-%2060%20Sec%20Security%20%5BVIDEO%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F03%2Fthe-mystery-of-the-missing-bitcoins-60-sec-security-video%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276752" class="post-276752 post type-post status-publish format-standard has-post-thumbnail hentry category-botnet-malware category-denial-of-service-security-threats category-featured category-law-order category-microsoft category-sony tag-bust tag-cybercrime tag-ddos tag-fraid tag-lizard-squad tag-omari tag-paypal tag-playstation tag-police tag-xbox">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '14']); return true;" href="https://nakedsecurity.sophos.com/2015/01/01/have-the-cops-busted-one-of-the-lizard-squad/" title="Permalink to Have the cops busted one of the Lizard Squad?" rel="bookmark">Have the cops busted one of the Lizard Squad?</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 1, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/01/have-the-cops-busted-one-of-the-lizard-squad/#respond" title="Comment on Have the cops busted one of the Lizard Squad?">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/01/have-the-cops-busted-one-of-the-lizard-squad/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '14']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/liz-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="liz-250" /></a>
+		<p>The "Lizard Squad" took out Microsoft's and Sony's games networks on Christmas Day. </p>
+<p>Everyone involved knew in advance that law enforcement would be *very* interested in whodunnit...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F01%2Fhave-the-cops-busted-one-of-the-lizard-squad%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Have%20the%20cops%20busted%20one%20of%20the%20Lizard%20Squad%3F&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F01%2Fhave-the-cops-busted-one-of-the-lizard-squad%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276742" class="post-276742 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-phishing-malware category-podcast category-vulnerability tag-mark-stockley tag-bots tag-chester-wisniewski tag-chet-chat tag-internet-of-things tag-iot tag-itunes tag-lizard-squad tag-lulzsec tag-paul-ducklin tag-phishing tag-scada tag-sophos-security-chet-chat tag-spam tag-sscc tag-technology tag-zombies">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '15']); return true;" href="https://nakedsecurity.sophos.com/2014/12/31/sscc-179-what-kind-of-a-name-is-lizard-squad-podcast/" title="Permalink to SSCC 179 - What kind of a name is &quot;Lizard Squad&quot;? [PODCAST]" rel="bookmark">SSCC 179 - What kind of a name is "Lizard Squad"? [PODCAST]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on December 31, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/12/31/sscc-179-what-kind-of-a-name-is-lizard-squad-podcast/#respond" title="Comment on SSCC 179 - What kind of a name is &quot;Lizard Squad&quot;? [PODCAST]">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/12/31/sscc-179-what-kind-of-a-name-is-lizard-squad-podcast/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '15']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/12/chet-chat-logo-featured-2501.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Here's the latest episode of our regular security podcast.</p>
+<p>This week: phishing, spamming, zombification, SCADA and the Internet of Things, and the curiously named cybervandals that go by "Lizard Squad."</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F31%2Fsscc-179-what-kind-of-a-name-is-lizard-squad-podcast%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=SSCC%20179%20-%20What%20kind%20of%20a%20name%20is%20%22Lizard%20Squad%22%3F%20%5BPODCAST%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F31%2Fsscc-179-what-kind-of-a-name-is-lizard-squad-podcast%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276631" class="post-276631 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-malware category-phishing-malware tag-blast-furnace tag-dos tag-meltdown tag-phishing tag-spear-phishing tag-steelworks">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '16']); return true;" href="https://nakedsecurity.sophos.com/2014/12/29/can-malware-and-hackers-really-cause-giant-physical-disasters/" title="Permalink to Can malware and hackers really cause giant physical disasters?" rel="bookmark">Can malware and hackers really cause giant physical disasters?</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on December 29, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/12/29/can-malware-and-hackers-really-cause-giant-physical-disasters/#comments" title="Comment on Can malware and hackers really cause giant physical disasters?">14 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/12/29/can-malware-and-hackers-really-cause-giant-physical-disasters/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '16']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/12/fireball-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Could you really have a hacker or malware initiated meltdown? </p>
+<p>Yes, says the 2014 report of the German Office for Information Security...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F29%2Fcan-malware-and-hackers-really-cause-giant-physical-disasters%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Can%20malware%20and%20hackers%20really%20cause%20giant%20physical%20disasters%3F&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F29%2Fcan-malware-and-hackers-really-cause-giant-physical-disasters%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276578" class="post-276578 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-law-order category-microsoft category-sony tag-chirstmas-day tag-ddos tag-lizard-squad tag-microsoft tag-sony">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '17']); return true;" href="https://nakedsecurity.sophos.com/2014/12/29/lizard-squad-member-ryan-explains-why-its-ok-to-ruin-christmas/" title="Permalink to Lizard Squad member &#039;Ryan&#039; explains why it&#039;s OK to ruin Christmas" rel="bookmark">Lizard Squad member 'Ryan' explains why it's OK to ruin Christmas</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/markstockley/" title="View all posts by Mark Stockley">Mark Stockley</a></span> on December 29, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/12/29/lizard-squad-member-ryan-explains-why-its-ok-to-ruin-christmas/#comments" title="Comment on Lizard Squad member &#039;Ryan&#039; explains why it&#039;s OK to ruin Christmas">20 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/12/29/lizard-squad-member-ryan-explains-why-its-ok-to-ruin-christmas/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '17']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/12/lizard-ryan-500.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Ryan" /></a>
+		<p>A man claiming to represent Lizard Squad, the group behind the Christmas day attacks on the Xbox and Playstation networks, has explained why they did it. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F29%2Flizard-squad-member-ryan-explains-why-its-ok-to-ruin-christmas%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Lizard%20Squad%20member%20%27Ryan%27%20explains%20why%20it%27s%20OK%20to%20ruin%20Christmas&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F29%2Flizard-squad-member-ryan-explains-why-its-ok-to-ruin-christmas%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276512" class="post-276512 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-denial-of-service-security-threats category-featured category-google category-law-order category-malware category-microsoft category-privacy category-weekly-summary tag-icymi tag-monday-review tag-security-news tag-weeklynews">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '18']); return true;" href="https://nakedsecurity.sophos.com/2014/12/22/monday-review-the-hot-25-stories-of-the-week-3/" title="Permalink to Monday review - the hot 25 stories of the week" rel="bookmark">Monday review - the hot 25 stories of the week</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nakedsecuritywriter/" title="View all posts by Naked Security writer">Naked Security writer</a></span> on December 22, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/12/22/monday-review-the-hot-25-stories-of-the-week-3/#respond" title="Comment on Monday review - the hot 25 stories of the week">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/12/22/monday-review-the-hot-25-stories-of-the-week-3/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '18']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/08/dow-2503.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="dow-250" /></a>
+		<p>From Sony through Pirate Bay to the latest evolution of banking malware...</p>
+<p>Here's our weekly roundup so you can catch up easily.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F22%2Fmonday-review-the-hot-25-stories-of-the-week-3%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Monday%20review%20-%20the%20hot%2025%20stories%20of%20the%20week&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F22%2Fmonday-review-the-hot-25-stories-of-the-week-3%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276274" class="post-276274 post type-post status-publish format-standard has-post-thumbnail hentry category-denial-of-service-security-threats category-featured category-law-order category-security-threats tag-ddos tag-spamhaus">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '19']); return true;" href="https://nakedsecurity.sophos.com/2014/12/18/teenager-pleads-guilty-to-massive-spamhaus-ddos-attack/" title="Permalink to Teenager pleads guilty to massive Spamhaus DDoS attack" rel="bookmark">Teenager pleads guilty to massive Spamhaus DDoS attack</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on December 18, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/12/18/teenager-pleads-guilty-to-massive-spamhaus-ddos-attack/#comments" title="Comment on Teenager pleads guilty to massive Spamhaus DDoS attack">3 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/12/18/teenager-pleads-guilty-to-massive-spamhaus-ddos-attack/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '19']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/12/hacker_ss_2501.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Hacker. Image courtesy of Shutterstock." /></a>
+		<p>A 17-year-old has pleaded guilty to taking part in the 2013 DDoS attack - the largest ever - against Spamhaus and internet exchanges.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F18%2Fteenager-pleads-guilty-to-massive-spamhaus-ddos-attack%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Teenager%20pleads%20guilty%20to%20massive%20Spamhaus%20DDoS%20attack&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F12%2F18%2Fteenager-pleads-guilty-to-massive-spamhaus-ddos-attack%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="nav-below" class="navigation">
+	<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/page/2/" >Older posts</a></div>
+	<div class="nav-next"></div>
+</div><!-- #nav-below -->
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="facebook-likebox-3" class="widget-container widget_facebook_likebox"><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FSophosSecurity&#038;width=200&#038;height=110&#038;colorscheme=light&#038;show_faces=false&#038;stream=false&#038;show_border=true&#038;header=false&#038;force_wall=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 200px;  height: 110px; background: #fff"></iframe></li><li id="text-2" class="widget-container widget_text">			<div class="textwidget"><a style="display:block;overflow:hidden;margin-bottom:1em;" href="http://www.sophos.com/en-us/lp/compliancecheck/questionnaire.aspx?cmp=701j0000000KZhHAAW"><img src="https://sophosnews.files.wordpress.com/2015/01/sophos_60_second_compliance_check_246x500px_na.png"></a></div>
+		</li><li class="sophos-widget related">
+                <h2>Related articles</h2>
+                <ul>
+                    <li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/12/23/polish-programmers-jailed-for-5-years-for-ddos-and-cyber-extortion-of-online-casino/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/05/ddos_thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Polish programmers jailed for 5 years for DDoS and cyber-extortion of online casino" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/12/23/polish-programmers-jailed-for-5-years-for-ddos-and-cyber-extortion-of-online-casino/">Polish programmers jailed for 5 years for DDoS and cyber-extortion of online casino</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/12/11/man-fined-183k-after-joining-anonymous-ddos-of-koch-industries-for-1-minute/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/12/anonymous_thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Man fined $183k after joining Anonymous DDoS of Koch Industries for 1 minute" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/12/11/man-fined-183k-after-joining-anonymous-ddos-of-koch-industries-for-1-minute/">Man fined $183k after joining Anonymous DDoS of Koch Industries for one minute</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/10/26/12-year-old-canadian-boy-admits-to-hacking-police-and-government-sites-for-anonymous/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2011/07/anon-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="12-year-old Canadian boy admits to hacking police and government sites for Anonymous" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/10/26/12-year-old-canadian-boy-admits-to-hacking-police-and-government-sites-for-anonymous/">12-year-old Canadian boy admits to hacking police and government sites for Anonymous</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/09/27/schoolboy-arrested-over-spamhaus-ddos-worlds-biggest-cyber-attack/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/09/spamhaus-logo1.jpg?w=115" class="attachment-115x115 wp-post-image" alt="London schoolboy arrested in Spamhaus DDoS, world&#039;s biggest cyber attack" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/09/27/schoolboy-arrested-over-spamhaus-ddos-worlds-biggest-cyber-attack/">Schoolboy arrested over Spamhaus DDoS, world's biggest cyber attack</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/04/26/suspect-in-massive-spamhaus-ddos-attack-arrested-in-spain/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/04/spamhaus-250.png?w=115" class="attachment-115x115 wp-post-image" alt="" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/04/26/suspect-in-massive-spamhaus-ddos-attack-arrested-in-spain/">Suspect in massive Spamhaus DDoS attack arrested in Spain</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/04/15/hacker-guilty-attacks-police-oxbridge-websites/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/04/oxford-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Hacker pleads guilty to attacks on UK Police, Oxbridge university websites" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/04/15/hacker-guilty-attacks-police-oxbridge-websites/">Hacker pleads guilty to attacks on UK Police, Oxbridge university websites</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/04/09/lulzsec-topiary-jake-davis-tflow/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/04/lulzsec-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="LulzSec hackers plead guilty, admit attacks on CIA, SOCA, Sony and others" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/04/09/lulzsec-topiary-jake-davis-tflow/">LulzSec hackers plead guilty, admit attacks on CIA, SOCA, Sony and others</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2012/11/12/ddos-marketing-stunt/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2012/11/hk-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="DDoS marketing stunt backfires, entrepreneur jailed for nine months" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2012/11/12/ddos-marketing-stunt/">DDoS marketing stunt backfires, entrepreneur jailed for nine months</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2012/05/09/norwegian-teenagers-arrested-over-denial-of-service-attacks/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2012/05/norway-face-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Norwegian teenagers arrested over denial-of-service attacks" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2012/05/09/norwegian-teenagers-arrested-over-denial-of-service-attacks/">Norwegian teenagers arrested over denial-of-service attacks</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2010/12/09/dutch-boy-arrested-for-wikileaks-related-ddos-attacks-on-mastercard-and-paypal/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2010/12/dutch-police.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Dutch boy arrested" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2010/12/09/dutch-boy-arrested-for-wikileaks-related-ddos-attacks-on-mastercard-and-paypal/">Dutch boy arrested for WikiLeaks-related DDoS attacks on Mastercard and PayPal</a></h3>
+</div>
+</li>                </ul>
+            </li><li class="sophos-widget free-tools">
+                <h2>Free tools</h2>
+                <ul>
+                    <li class="android">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">Mobile Security for Android</a></h3>
+            <ul class="features">
+                <li>Scans apps for malware</li>
+                <li>Remote lock and wipe </li>
+                <li>Detection from the cloud</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="mac">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">Antivirus for Mac</a></h3>
+            <ul class="features">
+                <li>Clears viruses and Trojans</li>
+                <li>Stops all threats, even new ones</li>
+                <li>Installs easily and runs quietly</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="virus">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">Virus Removal Tool</a></h3>
+            <ul class="features">
+                <li>Removes viruses and rootkits</li>
+                <li>Windows XP SP2 and up</li>
+                <li>Works with existing antivirus</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="utm">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">UTM Home Edition</a></h3>
+            <ul class="features">
+                <li>Fully-equipped UTM</li>
+                <li>Network, web, mail and VPN</li>
+                <li>Protects 50 IP addresses</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="firewall">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">UTM Essential Firewall</a></h3>
+            <ul class="features">
+                <li>Network security for business</li>
+                <li>No user/IP limitations</li>
+                <li>Upgrade to full UTM</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>                </ul>
+            </li><li class="sophos-widget popular">
+                <h2>Hot this week</h2>
+                <ul>
+                    <li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/thought-your-private-phone-photos-werent-on-facebook-think-again/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/photos-2502.png?w=115" class="attachment-115x115 wp-post-image" alt="photos-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/thought-your-private-phone-photos-werent-on-facebook-think-again/">Thought your private phone photos weren’t on Facebook? Think again…</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/23/microsofts-project-spartan-browser-will-replace-internet-explorer-but-slowly/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/project-spartan-250.png?w=115" class="attachment-115x115 wp-post-image" alt="Project Spartan" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/23/microsofts-project-spartan-browser-will-replace-internet-explorer-but-slowly/">Microsoft's Project Spartan browser will replace Internet Explorer - but slowly</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/dark-webs-evolution-market-vanishes-along-with-12-million/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/evolution-250-ss_128237366.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Dark Web&#039;s &#039;Evolution&#039; market vanishes along with $12 million" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/dark-webs-evolution-market-vanishes-along-with-12-million/">Dark Web's 'Evolution' market vanishes along with $12 million</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/19/apple-issues-update-to-recent-os-x-update/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/apple-2501.png?w=115" class="attachment-115x115 wp-post-image" alt="" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/19/apple-issues-update-to-recent-os-x-update/">Apple issues update to recent OS X update</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/24/are-smartphones-bad-for-our-kids/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/child-mobile-250-ss_256063456.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Therapist says mobile phones add to skyrocketing rate of child suicide" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/24/are-smartphones-bad-for-our-kids/">Are smartphones bad for our kids?</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/nypd-cop-arrested-for-hacking-into-fbi-traffic-databases/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/nypd_ss_250.jpg?w=115" class="attachment-115x115 wp-post-image" alt="NYPD. Image courtesy of pisaphotography/Shutterstock." /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/nypd-cop-arrested-for-hacking-into-fbi-traffic-databases/">NYPD cop arrested for hacking into FBI, traffic databases</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/24/will-artificial-intelligence-keep-humans-as-pets/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/woz.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Woz" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/24/will-artificial-intelligence-keep-humans-as-pets/">Will Artificial Intelligence keep humans as pets?</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/firewall-china-ss_204157051-250.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Anti-censorship China activists face daily $30,000 DDoS bill" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/20/greatfire-org-faces-daily-30000-bill-from-ddos-attack/">Greatfire.org faces daily $30,000 bill from DDoS attack</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/25/google-glass-isnt-dead-its-being-fine-tuned-for-the-masses/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/google-glass-250-ss-ed_242068195.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Google Glass isn&#039;t dead. It&#039;s being fine-tuned for the masses" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/25/google-glass-isnt-dead-its-being-fine-tuned-for-the-masses/">Google Glass isn't dead. It's being fine-tuned for the masses</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/23/convicted-identity-thief-caught-after-posting-selfie-on-twitter/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/social-security-thief-250-ss_48106810.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Convicted identity thief caught after posting selfies on Twitter" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/23/convicted-identity-thief-caught-after-posting-selfie-on-twitter/">Convicted identity thief caught after posting selfie on Twitter</a></h3>
+</div>
+</li>                </ul>
+            </li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+		</div><!-- #main -->
+	<br class="clear">
+	</div><!-- #wrapper -->
+
+	<div id="footer">
+		<div class="content">
+		<div class="top">
+			<ul class="us">
+				<li><a rel="nofollow" href="/about">About Naked Security</a></li>
+				<li><a rel="nofollow" href="http://www.sophos.com/en-us/about-us.aspx">About Sophos</a></li>
+				<li><a rel="nofollow" href="/authors">Our Authors</a></li>
+				<li><a rel="nofollow" href="/about/#awards">Awards</a></li>
+				<li><a rel="nofollow" href="/about/#tip">Got a story for us?</a></li>
+			</ul>
+			<ul class="social">
+				<li><a rel="nofollow" class="facebook"
+					href="http://www.facebook.com/SophosSecurity"
+					title="Join over 170,000 people in our Facebook community"></a></li>
+				<li><a rel="nofollow" class="twitter" href="https://twitter.com/#!/NakedSecurity"
+					title="Follow our team of security experts on Twitter"></a></li>
+				<li><a rel="nofollow" class="youtube" href="http://www.youtube.com/user/SophosLabs"
+					title="Take a look at the SophosLabs YouTube channel"></a></li>
+				<li><a rel="nofollow" class="gplus"
+                    href="https://plus.google.com/107512733802574023624"
+					title="Join our Google+ community"></a></li>
+				<li><a rel="nofollow" class="linkedin"
+					href="http://www.linkedin.com/groups?about=&amp;gid=4023910"
+					title="Join the Naked Security discussion group on LinkedIn"></a></li>
+				<li><a rel="nofollow" class="rss" href="/feed"
+					title="Subscribe to our RSS feed"></a></li>
+				<li><a rel="nofollow" class="email"
+					href="https://nakedsecurity.sophos.com/about/#newsletter"
+					title="Sign up to our daily newsletter"></a></li>
+			</ul>
+		</div>
+		<div class="column naked-security">
+				<div class="labels">
+					<h3>Tags</h3>
+					<div class="tags">
+						<div style="overflow:hidden"><a href='https://nakedsecurity.sophos.com/tag/adobe/' class='tag-link-29691' title='207 topics' style='font-size: 10.692307692308pt;'>Adobe</a>
+<a href='https://nakedsecurity.sophos.com/tag/android/' class='tag-link-641922' title='230 topics' style='font-size: 11.410256410256pt;'>Android</a>
+<a href='https://nakedsecurity.sophos.com/tag/anonymous/' class='tag-link-17835' title='148 topics' style='font-size: 8pt;'>anonymous</a>
+<a href='https://nakedsecurity.sophos.com/tag/apple/' class='tag-link-291' title='396 topics' style='font-size: 15.717948717949pt;'>Apple</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-breach/' class='tag-link-67372' title='164 topics' style='font-size: 8.8974358974359pt;'>data breach</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-loss-2/' class='tag-link-36277601' title='161 topics' style='font-size: 8.7179487179487pt;'>data loss</a>
+<a href='https://nakedsecurity.sophos.com/tag/ddos/' class='tag-link-64500' title='150 topics' style='font-size: 8.1794871794872pt;'>DDoS</a>
+<a href='https://nakedsecurity.sophos.com/tag/encryption/' class='tag-link-6474' title='150 topics' style='font-size: 8.1794871794872pt;'>Encryption</a>
+<a href='https://nakedsecurity.sophos.com/tag/exploit/' class='tag-link-78999' title='284 topics' style='font-size: 13.025641025641pt;'>Exploit</a>
+<a href='https://nakedsecurity.sophos.com/tag/facebook/' class='tag-link-81819' title='890 topics' style='font-size: 22pt;'>Facebook</a>
+<a href='https://nakedsecurity.sophos.com/tag/general/' class='tag-link-54' title='712 topics' style='font-size: 20.205128205128pt;'>General</a>
+<a href='https://nakedsecurity.sophos.com/tag/google/' class='tag-link-81' title='346 topics' style='font-size: 14.641025641026pt;'>Google</a>
+<a href='https://nakedsecurity.sophos.com/tag/hacking/' class='tag-link-1816' title='339 topics' style='font-size: 14.461538461538pt;'>hacking</a>
+<a href='https://nakedsecurity.sophos.com/tag/iphone/' class='tag-link-106595' title='169 topics' style='font-size: 9.0769230769231pt;'>iPhone</a>
+<a href='https://nakedsecurity.sophos.com/tag/it/' class='tag-link-3072' title='252 topics' style='font-size: 12.128205128205pt;'>IT</a>
+<a href='https://nakedsecurity.sophos.com/tag/malware/' class='tag-link-15593' title='785 topics' style='font-size: 21.102564102564pt;'>Malware</a>
+<a href='https://nakedsecurity.sophos.com/tag/microsoft/' class='tag-link-637' title='351 topics' style='font-size: 14.820512820513pt;'>Microsoft</a>
+<a href='https://nakedsecurity.sophos.com/tag/password/' class='tag-link-37471' title='175 topics' style='font-size: 9.4358974358974pt;'>password</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch/' class='tag-link-51546' title='165 topics' style='font-size: 8.8974358974359pt;'>Patch</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch-tuesday/' class='tag-link-341283' title='161 topics' style='font-size: 8.7179487179487pt;'>Patch Tuesday</a>
+<a href='https://nakedsecurity.sophos.com/tag/phishing/' class='tag-link-21013' title='212 topics' style='font-size: 10.871794871795pt;'>phishing</a>
+<a href='https://nakedsecurity.sophos.com/tag/privacy/' class='tag-link-3279' title='424 topics' style='font-size: 16.25641025641pt;'>Privacy</a>
+<a href='https://nakedsecurity.sophos.com/tag/scam/' class='tag-link-26037' title='311 topics' style='font-size: 13.74358974359pt;'>Scam</a>
+<a href='https://nakedsecurity.sophos.com/tag/spam/' class='tag-link-652' title='648 topics' style='font-size: 19.487179487179pt;'>Spam</a>
+<a href='https://nakedsecurity.sophos.com/tag/twitter/' class='tag-link-599182' title='390 topics' style='font-size: 15.538461538462pt;'>Twitter</a>
+<a href='https://nakedsecurity.sophos.com/tag/video/' class='tag-link-412' title='199 topics' style='font-size: 10.333333333333pt;'>Video</a>
+<a href='https://nakedsecurity.sophos.com/tag/vulnerability-2/' class='tag-link-35821136' title='456 topics' style='font-size: 16.794871794872pt;'>vulnerability</a>
+<a href='https://nakedsecurity.sophos.com/tag/web/' class='tag-link-151' title='226 topics' style='font-size: 11.410256410256pt;'>web</a>
+<a href='https://nakedsecurity.sophos.com/tag/web-2-0/' class='tag-link-3161794' title='301 topics' style='font-size: 13.564102564103pt;'>web 2.0</a>
+<a href='https://nakedsecurity.sophos.com/tag/www/' class='tag-link-4326' title='161 topics' style='font-size: 8.7179487179487pt;'>WWW</a></div>					</div>
+					<h3>Categories</h3>
+					<ul class="categories">
+							<li class="cat-item cat-item-29691"><a href="https://nakedsecurity.sophos.com/category/organisations/adobe/" >Adobe</a> (967)
+</li>
+	<li class="cat-item cat-item-154348"><a href="https://nakedsecurity.sophos.com/category/technologies/adobe-flash/" >Adobe Flash</a> (458)
+</li>
+	<li class="cat-item cat-item-641922"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/" >Android</a> (1,187)
+</li>
+	<li class="cat-item cat-item-291"><a href="https://nakedsecurity.sophos.com/category/organisations/apple/" >Apple</a> (2,289)
+</li>
+	<li class="cat-item cat-item-682731"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/apple-safari/" >Apple Safari</a> (453)
+</li>
+	<li class="cat-item cat-item-103188"><a href="https://nakedsecurity.sophos.com/category/audio-and-video/" >Audio and Video</a> (28)
+</li>
+	<li class="cat-item cat-item-44455797"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/botnet-malware/" >Botnet</a> (545)
+</li>
+	<li class="cat-item cat-item-73738013"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/clickjacking-facebook/" >Clickjacking</a> (76)
+</li>
+	<li class="cat-item cat-item-25818"><a href="https://nakedsecurity.sophos.com/category/cryptography/" >Cryptography</a> (1,564)
+</li>
+	<li class="cat-item cat-item-115992436 current-cat"><a href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/" >Denial of Service</a> (767)
+</li>
+	<li class="cat-item cat-item-45"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/firefox/" >Firefox</a> (468)
+</li>
+	<li class="cat-item cat-item-31178"><a href="https://nakedsecurity.sophos.com/category/law-order/" >Law &amp; order</a> (6,774)
+</li>
+	<li class="cat-item cat-item-15593"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/" >Malware</a> (6,281)
+</li>
+	<li class="cat-item cat-item-120"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/" >Mobile</a> (1,585)
+</li>
+	<li class="cat-item cat-item-47759"><a href="https://nakedsecurity.sophos.com/category/technologies/pdf/" >PDF</a> (89)
+</li>
+	<li class="cat-item cat-item-3279"><a href="https://nakedsecurity.sophos.com/category/privacy/" >Privacy</a> (7,783)
+</li>
+	<li class="cat-item cat-item-22916280"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/rogue-applications/" >Rogue applications</a> (164)
+</li>
+	<li class="cat-item cat-item-1070"><a href="https://nakedsecurity.sophos.com/category/organisations/sony/" >Sony</a> (55)
+</li>
+	<li class="cat-item cat-item-855087"><a href="https://nakedsecurity.sophos.com/category/sophoslabs/" >SophosLabs</a> (2,038)
+</li>
+	<li class="cat-item cat-item-652"><a href="https://nakedsecurity.sophos.com/category/security-threats/spam/" >Spam</a> (2,962)
+</li>
+	<li class="cat-item cat-item-20650"><a href="https://nakedsecurity.sophos.com/category/security-threats/vulnerability/" >Vulnerability</a> (5,184)
+</li>
+	<li class="cat-item cat-item-26885"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/" >Web Browsers</a> (415)
+</li>
+	<li class="cat-item cat-item-800"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/windows/" >Windows</a> (882)
+</li>
+	<li class="cat-item cat-item-48230381"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/windows-phone-mobile/" >Windows phone</a> (116)
+</li>
+	<li class="cat-item cat-item-259940823"><a href="https://nakedsecurity.sophos.com/category/organisations/yahoo-organisations/" >Yahoo</a> (35)
+</li>
+					</ul>
+				</div>
+				<div class="months">
+					<h3>Archives by month</h3>
+					<ul>
+							<li><a href='https://nakedsecurity.sophos.com/2015/03/'>March 2015</a>&nbsp;(93)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/02/'>February 2015</a>&nbsp;(108)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/01/'>January 2015</a>&nbsp;(109)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/12/'>December 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/11/'>November 2014</a>&nbsp;(87)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/10/'>October 2014</a>&nbsp;(98)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/09/'>September 2014</a>&nbsp;(93)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/08/'>August 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/07/'>July 2014</a>&nbsp;(104)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/06/'>June 2014</a>&nbsp;(97)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/05/'>May 2014</a>&nbsp;(101)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/04/'>April 2014</a>&nbsp;(96)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/03/'>March 2014</a>&nbsp;(96)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/02/'>February 2014</a>&nbsp;(86)</li>
+					</ul>
+					<p><a href="/archive/">More...</a></p>
+				</div> <!-- .monthly -->
+			</div> <!-- .column -->
+			<div class="column sophos">
+				<h3>Download some free tools</h3>
+				<ul class="tools">
+					<li><strong><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx">Free anti-virus for your Mac</a></strong><small>Free antivirus that works simply and beautifully</small></li>
+       				<li><strong><a href="https://play.google.com/store/apps/details?id=com.sophos.smsec">Free Android protection</a></strong><small>Free antivirus for all your Android devices</small></li>
+					<li><a href="http://www.sophos.com/en-us/products/free-tools.aspx">More free tools...</a></li>
+				</ul>
+				<h3>Take a look at our products</h3>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/endpoint.aspx">Endpoint</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/encryption.aspx">Encryption</a></li>
+				</ul>
+				<ul class="products">
+			   	 	<li><a href="http://www.sophos.com/en-us/products/mobile.aspx">Mobile</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/network.aspx">Network</a></li>
+				</ul>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/email.aspx">Email</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/web.aspx">Web</a></li>
+				</ul>
+				<p>Try out our <a href="http://www.sophos.com/en-us/products/free-trials.aspx">free trials</a> and <a href="http://www.sophos.com/en-us/products/product-demos.aspx">demos</a></p>
+				<h3>Investigate the threats</h3>
+				<ul class="threats">
+					<li><a href="http://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware.aspx">Virus and spyware analyses</a></li>
+					<li><a href="http://www.sophos.com/en-us/threat-center.aspx">Threat Center</a></li>
+					<li><a href="http://www.sophos.com/en-us/why-sophos/our-people/inside-sophoslabs.aspx">Inside SophosLabs</a></li>
+				</ul>
+			</div>
+		</div> <!-- .content -->
+		<div id="blog-footer" role="contentinfo">
+			<div id="colophon">
+				<ul>
+					<li>&copy; 1997-2015 Sophos Ltd. All rights reserved</li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/blogs.html">Legal</a></li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/privacy.html">Privacy</a></li>
+                    <li><a rel="nofollow" href="/cookies-and-scripts/">Cookies</a></li>
+                    <li><a rel="nofollow" href="/disclaimers/">Disclaimers</a></li>
+                    <li><a href="http://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="https://s0.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-light-small.png" width="187" height="26" alt="Powered by WordPress.com VIP"></a></li>
+				</ul>
+			</div><!-- #colophon -->
+		</div><!-- #blog-footer -->
+	</div> <!-- #footer -->
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"0","is_front_page":"0","is_archive":"1","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/_static/??/wp-content/js/devicepx.js,/wp-includes/js/jquery/ui/jquery.ui.core.min.js,/wp-content/mu-plugins/2-vip/js/vip-analytics.js?m=1411795912j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?44" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'15254721','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'15254721','v':'wpcom','tz':'0','user_id':'0','subd':'sophosnews'}]);
+function st_vt() {var x=document.createElement("img");x.src="https://pixel.wp.com/g.gif?blog=15254721&v=wpcomvt&tz=0&user_id=0&subd=sophosnews&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXRThKbHcwXTdETWI1alhvb1oseHImN101ZFpEakVpYjlQYVFLYzBaVHRtPz0wXS9bZHRhUiZdL1ktblJJSlV6LjQuXWNZYW5faHlmazZTJmlXQVM5S3hEOFI/SS0xVSZ4cS9MVDc4YVJ6amsxSnJtdy5Ldm9qNjlfWFVaMS4uLnxvM3FfdCtMbj9wQ2FSbXcrMFp6MVhhfldoM19dVXVSbTcwV2dBMnI3S2J3NSVtWWouSl1iUmdycUxWZHBWJUtBa0ZFcWc2OFRwZlFlNjRxbHIuXUtXZEF+dGNrWS02X2xjOVNY'}]);
+_stq.push([ 'clickTrackerInit', '15254721', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
