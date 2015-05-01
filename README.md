@@ -16,7 +16,7 @@ This code is based on the work by [Mikko Ohtamaa](https://opensourcehacker.com/2
 	sudo easy_install service_identity
 	sudo easy_install pyPdf
 
-#### How to run WekWalker
+#### How to run WebWalker
 
 	./run.sh
 
