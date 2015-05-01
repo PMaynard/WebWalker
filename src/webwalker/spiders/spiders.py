@@ -1,9 +1,3 @@
-"""
-
-        A sample crawler for seeking a text on sites.
-
-"""
-
 import StringIO
 
 from functools import partial
@@ -16,13 +10,11 @@ from scrapy.contrib.linkextractors.sgml import SgmlLinkExtractor
 
 from scrapy.item import Item
 
-import urllib2
+import urllib2, re
 
 def find_all_substrings(string, sub):
     """
-
-http://code.activestate.com/recipes/499314-find-all-indices-of-a-substring-in-a-given-string/
-
+    http://code.activestate.com/recipes/499314-find-all-indices-of-a-substring-in-a-given-string/
     """
     import re
     starts = [match.start() for match in re.finditer(re.escape(sub), string)]
@@ -33,17 +25,17 @@ class MySpider(CrawlSpider):
 
     name = "webwalker"
 
-    # Stay within these domains when crawling
-    allowed_domains = ["nakedsecurity.sophos.com"]
+    with open('hyperlinks.txt') as f:
+        # stirp the \n from each item.
+        start_urls  = [l.strip() for l in f.readlines()]
 
-    start_urls = [
-        "https://nakedsecurity.sophos.com"
-    ]
-
-    # Add our callback which will be called for every found link
-    rules = [
-        Rule(SgmlLinkExtractor(), follow=True, callback="check_violations")
-    ]
+        # Stay within these domains when crawling
+        allowed_domains = [re.search(r'^(https?:\/\/)?(.+)$',l).group(2) for l in start_urls]
+        
+        # Add our callback which will be called for every found link
+        rules = [
+            Rule(SgmlLinkExtractor(), follow=True, callback="check_violations")
+        ]
 
     # How many pages crawled? XXX: Was not sure if CrawlSpider is a singleton class
     crawl_count = 0
@@ -91,7 +83,8 @@ class MySpider(CrawlSpider):
 
         # Entries which are not allowed to appear in content.
         # These are case-sensitive
-        blacklist = ["SCADA", "ICS", "stuxnet", "havex"]
+        with open('../../keywords.txt') as f:
+            blacklist = f.readlines()
 
         # Enteries which are allowed to appear. They are usually
         # non-human visible data, like CSS classes, and may not be interesting business wise
