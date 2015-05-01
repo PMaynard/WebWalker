@@ -1,7 +1,7 @@
 # WebWalker
 Python web scraper which downloads documents based on keywords.
 
-This code is based on the work by (Mikko Ohtamaa)[https://opensourcehacker.com/2011/03/08/installing-and-using-scrapy-web-crawler-to-search-text-on-multiple-sites/].
+This code is based on the work by [Mikko Ohtamaa](https://opensourcehacker.com/2011/03/08/installing-and-using-scrapy-web-crawler-to-search-text-on-multiple-sites/).
 
 ## Install
 
