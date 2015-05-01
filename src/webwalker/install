@@ -1,4 +1,0 @@
- 1999  easy_install service_identity
- 2000  sudo easy_install service_identity
- 2004  sudo easy_install pyPdf
- 2005  history | grep easy > install

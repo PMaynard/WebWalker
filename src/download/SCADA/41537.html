@@ -1,0 +1,1059 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="tag">
+	<head>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Encryption | Naked Security</title>
+
+				
+		
+		<link rel="shortcut icon" type="image/x-icon" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/favicon.ico">
+		<link rel="profile" href="http://gmpg.org/xfn/11">
+		<link rel="publisher" href="https://plus.google.com/107512733802574023624/">
+		<link rel="stylesheet" type="text/css" media="all" href="https://s0.wp.com/wp-content/themes/vip/sophosnews/style.css">
+		<link rel="pingback" href="https://sophosnews.wordpress.com/xmlrpc.php">
+		<meta name="keywords" content="encryption">
+<meta name="google-site-verification" content="I9dHFo-YhnK2MfAHn-20V4GnWrOttVUYyISGamyU41M">
+<meta name="msvalidate.01" content="7D8D1FA2892142B1543D2CBCD07FB88F">
+		<script src='https://r-login.wordpress.com/remote-login.php?action=js&amp;host=nakedsecurity.sophos.com&amp;id=15254721&amp;t=1430490489&amp;back=https%3A%2F%2Fnakedsecurity.sophos.com%2Ftag%2Fencryption%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Feed" href="https://nakedsecurity.sophos.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Comments Feed" href="https://nakedsecurity.sophos.com/comments/feed/">
+<link rel="alternate" type="application/rss+xml" title="Naked Security &raquo; Encryption Tag Feed" href="https://nakedsecurity.sophos.com/tag/encryption/feed/">
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='https://s2.wp.com/_static/??-eJx9j9EOwjAIRX/IirpmPhm/pavYsdHSrF38fZlRo9Hs7V5yDgS4ZeMlVUwV4mwyz4FSAaYRCwxYs/OjebStL2UD/3EvE+o8ZlcXIuKFHDJGxda0mNuXtcRebz3PECSppEp5h7VFAcWweFdJ0lcxV3Y0rakTdixBYwClPuqPVHt9qEBvIbB0jhfgHE972+yatj3Y43AHpEh7NQ==' type='text/css' media='all'>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Sophos = {"ajaxurl":"https:\/\/nakedsecurity.sophos.com\/wp-admin\/admin-ajax.php","nonce":"75eab79a6c"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNkG0KwjAMhi9kW6YD2Q/xLLWLW7a1qU27MU9vxQmKQ4VASPLkzYeavEBnhlQDqy7bJUGYFyc73qhvgLDYBB1BWnRP2JCL4OKdtXTCAURiCLrJuSx0phXOE0cLzBlaqb6vhG5EmH5iHUSvTS8CMF4/VGMLeZ4a0Ssm3xI7mF6uk4aox/+7HpF0uoeawaSAcV5ecrSHotzuyn1VVGV3A3nzias='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://sophosnews.wordpress.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml"> 
+<meta name="generator" content="WordPress.com">
+<link rel='openid.server' href='https://sophosnews.wordpress.com/?openidserver=1'>
+<link rel='openid.delegate' href='https://sophosnews.wordpress.com/'>
+<link rel="search" type="application/opensearchdescription+xml" href="https://nakedsecurity.sophos.com/osd.xml" title="Naked Security">
+<link rel="search" type="application/opensearchdescription+xml" href="https://wordpress.com/opensearch.xml" title="WordPress.com">
+<meta name="application-name" content="Naked Security"><meta name="msapplication-window" content="width=device-width;height=device-height"><meta name="msapplication-tooltip" content="Computer Security News, Advice and Research"><meta name="msapplication-task" content="name=Subscribe;action-uri=https://nakedsecurity.sophos.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico"><style type="text/css" id="syntaxhighlighteranchor"></style>
+		<script type="text/javascript">
+
+			/* Setup a Google Analytics command stack to track the page view */
+			window._gaq = window._gaq || [];
+
+			// Add data to the .sophos.com profile
+			_gaq.push(
+				['_setAccount', 'UA-737537-1'],
+				['_setDomainName', '.sophos.com'],
+				['_setAllowLinker', true],
+				['_setAllowHash', false],
+				['_trackPageview', '/nakedsecurity'+window.location.pathname+window.location.search]
+			);
+
+			// Add data to the independent profile
+			_gaq.push(
+				['ns._setAccount', 'UA-737537-25'],
+				['ns._trackPageview']
+			);
+
+			jQuery(function () {
+                            try {
+    				window.sophosGaGuidStore.processGaToken({
+        				useGoogleVid: true,
+        				outputDebug: false,
+        				gaScope: 1,
+        				gaNamespace: 'ns',
+        				gaAccount: 'UA-737537-25'
+                            });
+                            } catch (e) {
+				// do nothing
+                            }
+			});
+
+			/* Create the appropriate Google Analytics script element */
+			(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+            <meta name="msvalidate.01" content="D40C7646E4220DFB555112071FD858E4" />
+	</head>
+	<body class="archive tag tag-encryption tag-6474 mp6 typekit-enabled customizer-styles-applied highlander-enabled highlander-light">
+            <div class="xp"></div>
+                <div id="printHeader"><img src="https://s0.wp.com/wp-content/themes/vip/sophosnews/images/sophos-logo.gif"
+				width="126" height="50" alt="Antivirus and Security Software from Sophos"></div>
+
+		<div id="wrapper" class="hfeed">
+			<div id="header">
+                            <a rel="home" href="/" title="Naked Security - Award-winning computer security, news, opinion, advice and research from SOPHOS">
+                                                                    <span class="title">Naked <em>Security</em></span>
+                                                                <small>Award-winning computer security news from <span class="replace logo sophos">Sophos</span></small>
+                            </a>
+				<a class="mothership" rel="nofollow" href="http://www.sophos.com/" title="SOPHOS"></a>
+				<div title="Hi" class="robot">
+				</div>
+				<div id="game-container"></div>
+				<div class="navigation">
+					<ul id="menu-category-menu" class="menu"><li id="menu-item-31599" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31599"><a href="https://nakedsecurity.sophos.com/category/security-threats/malware/">Malware</a></li>
+<li id="menu-item-31533" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31533"><a href="https://nakedsecurity.sophos.com/category/organisations/apple/">Mac</a></li>
+<li id="menu-item-187396" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187396"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/">Facebook</a></li>
+<li id="menu-item-187828" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-187828"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/">Android</a></li>
+<li id="menu-item-147074" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147074"><a href="https://nakedsecurity.sophos.com/category/security-threats/vulnerability/">Vulnerability</a></li>
+<li id="menu-item-31368" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-31368"><a href="https://nakedsecurity.sophos.com/category/security-threats/data-loss/">Data loss</a></li>
+<li id="menu-item-147073" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-147073"><a href="https://nakedsecurity.sophos.com/category/privacy/">Privacy</a></li>
+<li id="menu-item-27702" class="more menu-item menu-item-type-custom menu-item-object-custom menu-item-27702"><a href="/categories">More...</a></li>
+</ul>					<form action="/" id="searchform" method="get" role="search">
+						<label for="s" class="screen-reader-text">Search for:</label>
+						<input class="text" onclick="if (this.value == search articles) this.value=''" type="text"	size="5" id="s" name="s" value="search articles">
+						<input class="submit" type="submit" value="" id="searchButton">
+					</form>
+				</div>
+				<ul class="social">
+					<li><a class="facebook" rel="nofollow" href="https://www.facebook.com/SophosSecurity" title="Join over 250,000 people in our Facebook community"></a></li><li><a
+					class="twitter" rel="nofollow" href="https://twitter.com/#!/NakedSecurity" title="Follow our team of security experts on Twitter"></a></li><li><a
+					class="youtube" rel="nofollow" href="https://www.youtube.com/user/SophosLabs" title="Take a look at the SophosLabs YouTube channel"></a></li><li><a
+                    class="gplus" rel="nofollow" href="https://plus.google.com/107512733802574023624" rel="publisher" title="Join our Google+ community"></a></li><li><a
+					class="linkedin" rel="nofollow" href="https://www.linkedin.com/groups?about=&amp;gid=4023910" title="Join the Naked Security discussion group on LinkedIn"></a></li><li><a
+					class="rss" rel="nofollow" href="/feed" title="Subscribe to our RSS feed"></a></li>
+				</ul>
+			</div><!-- #header -->
+                        			<div id="main">
+				
+		<div id="container">
+			<div id="content" role="main">
+
+				<h1 class="page-title">Encryption</h1><p class="feeds">(get it in <a rel="nofollow" href="?feed=rss2">RSS</a> or <a rel="nofollow" href="?feed=atom">Atom</a>)</p>
+
+<div id="nav-above" class="navigation">
+	<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/tag/encryption/page/2/" >Older posts</a></div>
+	<div class="nav-next"></div>
+</div><!-- #nav-above -->
+
+
+
+<div id="post-285633" class="post-285633 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-featured category-malware category-privacy category-vulnerability tag-2fa tag-access-point tag-encryption tag-fde tag-free-wi-fi tag-full-disk-encryption tag-how-to tag-keylogger tag-lock-code tag-patching tag-rsa tag-rsac tag-security-tips tag-tips tag-traveling tag-travelling tag-two-factor-authentication tag-wi-fi">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '0']); return true;" href="https://nakedsecurity.sophos.com/2015/04/20/5-online-privacy-and-security-tips-for-travelers/" title="Permalink to 5 online privacy and security tips for travelers" rel="bookmark">5 online privacy and security tips for travelers</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/johnzorabedian/" title="View all posts by John Zorabedian">John Zorabedian</a></span> on April 20, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/04/20/5-online-privacy-and-security-tips-for-travelers/#comments">3 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/04/20/5-online-privacy-and-security-tips-for-travelers/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '0']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/04/5-tips-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Going on holiday or traveling for business any time soon? </p>
+<p>Here are 5 online privacy and security tips for when you're on the road.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F20%2F5-online-privacy-and-security-tips-for-travelers%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=5%20online%20privacy%20and%20security%20tips%20for%20travelers&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F20%2F5-online-privacy-and-security-tips-for-travelers%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-285051" class="post-285051 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-featured category-security-threats tag-7-deadly-it-sins tag-data-loss-prevention tag-email tag-encryption tag-pgp tag-smime tag-spam tag-spx">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '1']); return true;" href="https://nakedsecurity.sophos.com/2015/04/17/practical-it-what-you-need-to-know-about-email-encryption/" title="Permalink to Practical IT: What you need to know about email encryption" rel="bookmark">Practical IT: What you need to know about email encryption</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nsrossmckerchar-2/" title="View all posts by Ross McKerchar">Ross McKerchar</a></span> on April 17, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/04/17/practical-it-what-you-need-to-know-about-email-encryption/#comments">4 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/04/17/practical-it-what-you-need-to-know-about-email-encryption/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '1']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/04/it-sins-unencrypted-email-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="it-sins-unencrypted-email-250" /></a>
+		<p>When email was invented over 40 years ago, no one thought about how to ensure the integrity of messages. Here's what you need to know about securing email with the right kind of encryption.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F17%2Fpractical-it-what-you-need-to-know-about-email-encryption%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Practical%20IT%3A%20What%20you%20need%20to%20know%20about%20email%20encryption&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F17%2Fpractical-it-what-you-need-to-know-about-email-encryption%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-284860" class="post-284860 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-privacy tag-backdoor tag-encryption tag-encryption-key tag-end-to-end-encryption tag-front-door tag-nsa tag-privacy">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '2']); return true;" href="https://nakedsecurity.sophos.com/2015/04/13/the-nsa-wants-a-multi-part-encryption-key-for-front-door-access-to-your-data/" title="Permalink to The NSA wants a multi-part encryption key for &#039;front door&#039; access to your data" rel="bookmark">The NSA wants a multi-part encryption key for 'front door' access to your data</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/leemunsonblog/" title="View all posts by Lee Munson">Lee Munson</a></span> on April 13, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/04/13/the-nsa-wants-a-multi-part-encryption-key-for-front-door-access-to-your-data/#comments">8 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/04/13/the-nsa-wants-a-multi-part-encryption-key-for-front-door-access-to-your-data/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '2']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/04/lock-encryption-key-250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="The NSA wants a multi-part encryption key for &#039;front door&#039; access to your data" /></a>
+		<p>As tech firms, privacy groups and citizens continue to balk at government surveillance, the NSA has come up with an interesting proposal for a multi-part encryption key.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F13%2Fthe-nsa-wants-a-multi-part-encryption-key-for-front-door-access-to-your-data%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=The%20NSA%20wants%20a%20multi-part%20encryption%20key%20for%20%27front%20door%27%20access%20to%20your%20data&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F04%2F13%2Fthe-nsa-wants-a-multi-part-encryption-key-for-front-door-access-to-your-data%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-283826" class="post-283826 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-featured category-ransomware-malware category-security-threats tag-aids-information-trojan tag-cloud-storage tag-cryptolocker tag-encryption tag-hard-drive tag-ransomware tag-world-backup-day">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '3']); return true;" href="https://nakedsecurity.sophos.com/2015/03/31/world-backup-day-is-your-data-safe-enough/" title="Permalink to World Backup Day - is your data safe enough?" rel="bookmark">World Backup Day - is your data safe enough?</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/johnhawes/" title="View all posts by John Hawes">John Hawes</a></span> on March 31, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/31/world-backup-day-is-your-data-safe-enough/#comments">3 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/31/world-backup-day-is-your-data-safe-enough/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '3']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/world-backup-day-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="World Backup Day - is your data safe enough?" /></a>
+		<p>Ransomware has made us all aware of the value of backups - but there are many other reasons to have a copy of your vital data in reserve!</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F31%2Fworld-backup-day-is-your-data-safe-enough%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=World%20Backup%20Day%20-%20is%20your%20data%20safe%20enough%3F&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F31%2Fworld-backup-day-is-your-data-safe-enough%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-283250" class="post-283250 post type-post status-publish format-standard has-post-thumbnail hentry category-apple category-data-loss category-facebook category-featured category-malware category-os-x category-privacy category-ransomware-malware category-rogue-applications category-video category-vulnerability tag-60-sec-security tag-60-second-security tag-60-seconds tag-60ss tag-apple tag-encryption tag-exploit tag-facebook tag-images tag-os-x tag-patch tag-photo-sync tag-privacy tag-ransomware tag-teslacrypt tag-vulnerability-2">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '4']); return true;" href="https://nakedsecurity.sophos.com/2015/03/21/whats-that-screenshot-doing-on-facebook-60-sec-security-video/" title="Permalink to What&#039;s that screenshot doing on Facebook? 60 Sec Security [VIDEO]" rel="bookmark">What's that screenshot doing on Facebook? 60 Sec Security [VIDEO]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on March 21, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/21/whats-that-screenshot-doing-on-facebook-60-sec-security-video/#respond">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/21/whats-that-screenshot-doing-on-facebook-60-sec-security-video/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '4']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/60ss-video-2502.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="\" /></a>
+		<p>Facebook, ransomware and updates to updates - all in 60 seconds!</p>
+<p> Our weekly video for 21 March 2015...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F21%2Fwhats-that-screenshot-doing-on-facebook-60-sec-security-video%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=What%27s%20that%20screenshot%20doing%20on%20Facebook%3F%2060%20Sec%20Security%20%5BVIDEO%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F21%2Fwhats-that-screenshot-doing-on-facebook-60-sec-security-video%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-282862" class="post-282862 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-yahoo-organisations tag-encryption tag-passwords tag-yahoo">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '5']); return true;" href="https://nakedsecurity.sophos.com/2015/03/16/yahoo-slices-your-password-out-of-login-process-shows-off-end-to-end-encryption/" title="Permalink to Yahoo slices your password out of login process, shows off end-to-end encryption" rel="bookmark">Yahoo slices your password out of login process, shows off end-to-end encryption</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on March 16, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/16/yahoo-slices-your-password-out-of-login-process-shows-off-end-to-end-encryption/#comments">10 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/16/yahoo-slices-your-password-out-of-login-process-shows-off-end-to-end-encryption/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '5']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/09/yahoo_thumb.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Yahoo" /></a>
+		<p>The result of snipping out passwords: one-factor authentication. Just make sure not to lose that phone!</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F16%2Fyahoo-slices-your-password-out-of-login-process-shows-off-end-to-end-encryption%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Yahoo%20slices%20your%20password%20out%20of%20login%20process%2C%20shows%20off%20end-to-end%20encryption&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F16%2Fyahoo-slices-your-password-out-of-login-process-shows-off-end-to-end-encryption%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-282457" class="post-282457 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-featured tag-data-breach tag-data-theft tag-encryption tag-indiana-state-medical-association tag-isma tag-medical-data">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '6']); return true;" href="https://nakedsecurity.sophos.com/2015/03/11/stolen-hard-drives-bring-more-data-breach-pain-for-us-health-services/" title="Permalink to Stolen hard drives bring more data breach pain for US health services" rel="bookmark">Stolen hard drives bring more data breach pain for US health services</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/johnhawes/" title="View all posts by John Hawes">John Hawes</a></span> on March 11, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/11/stolen-hard-drives-bring-more-data-breach-pain-for-us-health-services/#comments">1 Comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/11/stolen-hard-drives-bring-more-data-breach-pain-for-us-health-services/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '6']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/doctor_ss_250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Doctor. Image courtesy of Shutterstock." /></a>
+		<p>The Indiana State Medical Association has warned 39,090 of its clients that their private data may be at risk of leakage, after the "random" theft of a pair of backup hard drives.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F11%2Fstolen-hard-drives-bring-more-data-breach-pain-for-us-health-services%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Stolen%20hard%20drives%20bring%20more%20data%20breach%20pain%20for%20US%20health%20services&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F11%2Fstolen-hard-drives-bring-more-data-breach-pain-for-us-health-services%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-281934" class="post-281934 post type-post status-publish format-standard has-post-thumbnail hentry category-android category-featured category-google category-mobile tag-android tag-encryption tag-google tag-lollipop">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '7']); return true;" href="https://nakedsecurity.sophos.com/2015/03/04/google-quietly-drops-promised-encryption-by-default-for-android-lollipop/" title="Permalink to Google quietly drops promised encryption by default for Android Lollipop" rel="bookmark">Google quietly drops promised encryption by default for Android Lollipop</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on March 4, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/03/04/google-quietly-drops-promised-encryption-by-default-for-android-lollipop/#comments">5 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/03/04/google-quietly-drops-promised-encryption-by-default-for-android-lollipop/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '7']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/lollipop-250-ss_244816201.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Google quietly drops promised encryption by default for Android Lollipop" /></a>
+		<p>Google has confirmed reports: that sweet encryption-by-default it promised for Android Lollipop left a sour taste when it came to device performance. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F04%2Fgoogle-quietly-drops-promised-encryption-by-default-for-android-lollipop%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Google%20quietly%20drops%20promised%20encryption%20by%20default%20for%20Android%20Lollipop&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F03%2F04%2Fgoogle-quietly-drops-promised-encryption-by-default-for-android-lollipop%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-281649" class="post-281649 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-data-loss category-featured category-malware category-privacy category-video category-vulnerability tag-60-sec-security tag-60-second-security tag-60-seconds tag-60ss tag-anthem tag-data-breach tag-dvla tag-edward-snowden tag-encryption tag-healthcare tag-intelligence-services tag-leak tag-paymypcn tag-pii tag-secret-key tag-sim-card">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '8']); return true;" href="https://nakedsecurity.sophos.com/2015/02/28/bought-pii-from-the-government-please-dont-lose-it-60-sec-security-video/" title="Permalink to Bought PII from the government? PLEASE DON&#039;T LOSE IT! 60 Sec Security [VIDEO]" rel="bookmark">Bought PII from the government? PLEASE DON'T LOSE IT! 60 Sec Security [VIDEO]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on February 28, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/28/bought-pii-from-the-government-please-dont-lose-it-60-sec-security-video/#respond">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/28/bought-pii-from-the-government-please-dont-lose-it-60-sec-security-video/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '8']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/60ss-video-2502.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="\" /></a>
+		<p>Here's the latest episode of our weekly computer security roundup.</p>
+<p>The latest news presented so you can enjoy it...in just one minute!</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F28%2Fbought-pii-from-the-government-please-dont-lose-it-60-sec-security-video%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Bought%20PII%20from%20the%20government%3F%20PLEASE%20DON%27T%20LOSE%20IT%21%2060%20Sec%20Security%20%5BVIDEO%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F28%2Fbought-pii-from-the-government-please-dont-lose-it-60-sec-security-video%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-281208" class="post-281208 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-featured category-law-order category-privacy category-security-threats category-social-networks tag-class-action tag-class-action-lawsuit tag-encryption tag-lawsuit tag-linkedin tag-passwords tag-salted-hashes tag-settlement">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '9']); return true;" href="https://nakedsecurity.sophos.com/2015/02/25/linkedin-settles-class-action-suit-over-2012-unsalted-password-leak/" title="Permalink to LinkedIn settles class action suit over 2012 unsalted password leak" rel="bookmark">LinkedIn settles class action suit over 2012 unsalted password leak</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on February 25, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/02/25/linkedin-settles-class-action-suit-over-2012-unsalted-password-leak/#respond">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/02/25/linkedin-settles-class-action-suit-over-2012-unsalted-password-leak/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '9']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/02/linkedin-settles-250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="LinkedIn settles class action suit over 2012 unsalted password leak" /></a>
+		<p>LinkedIn is privately settling the 2012 unsalted password leak. Were you one of the 800,000 affected users? Here's what you need to know. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F25%2Flinkedin-settles-class-action-suit-over-2012-unsalted-password-leak%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=LinkedIn%20settles%20class%20action%20suit%20over%202012%20unsalted%20password%20leak&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F02%2F25%2Flinkedin-settles-class-action-suit-over-2012-unsalted-password-leak%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278612" class="post-278612 post type-post status-publish format-standard has-post-thumbnail hentry category-adobe category-adobe-flash category-featured category-java category-oracle category-privacy category-video category-vulnerability tag-60-sec-security tag-60-second-security tag-60-seconds tag-60ss tag-adobe tag-authentication tag-cpu tag-encryption tag-exploit tag-flash tag-ics tag-oracle tag-patches tag-scada tag-secure-coding tag-updates tag-vulnerability-2 tag-zero-day">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '10']); return true;" href="https://nakedsecurity.sophos.com/2015/01/24/scada-programmers-its-time-for-security-by-default-60-sec-security-video/" title="Permalink to SCADA programmers? It&#039;s time for security by default! 60 Sec Security [VIDEO]" rel="bookmark">SCADA programmers? It's time for security by default! 60 Sec Security [VIDEO]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 24, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/24/scada-programmers-its-time-for-security-by-default-60-sec-security-video/#respond">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/24/scada-programmers-its-time-for-security-by-default-60-sec-security-video/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '10']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/60ss-video-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Here's the latest episode of our weekly 60-second security video. </p>
+<p>Enjoy the news in just one minute...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F24%2Fscada-programmers-its-time-for-security-by-default-60-sec-security-video%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=SCADA%20programmers%3F%20It%27s%20time%20for%20security%20by%20default%21%2060%20Sec%20Security%20%5BVIDEO%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F24%2Fscada-programmers-its-time-for-security-by-default-60-sec-security-video%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278394" class="post-278394 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-featured category-google category-microsoft category-oracle category-podcast category-privacy category-vulnerability tag-authentication tag-chester-wisniewski tag-chet-chat tag-critical-patch tag-dongle tag-encryption tag-firmware tag-free-wi-fi tag-marriott tag-network-sniffing tag-oracle tag-paul-ducklin tag-pirate-party tag-progressive tag-project-zero tag-routers tag-sophos-security-chat-chat tag-sscc tag-technology tag-tor tag-wi-fi tag-wpa tag-wpa2">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '11']); return true;" href="https://nakedsecurity.sophos.com/2015/01/22/sscc-182-what-would-the-pirate-party-do-podcast/" title="Permalink to SSCC 182 - What would the Pirate Party do? [PODCAST]" rel="bookmark">SSCC 182 - What would the Pirate Party do? [PODCAST]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 22, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/22/sscc-182-what-would-the-pirate-party-do-podcast/#comments">2 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/22/sscc-182-what-would-the-pirate-party-do-podcast/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '11']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/chet-chat-logo-featured-2503.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>This week's episode of our quarter-hour security podcast. </p>
+<p>Entertaining as well as accurate and educational - why not give it a listen?</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F22%2Fsscc-182-what-would-the-pirate-party-do-podcast%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=SSCC%20182%20-%20What%20would%20the%20Pirate%20Party%20do%3F%20%5BPODCAST%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F22%2Fsscc-182-what-would-the-pirate-party-do-podcast%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-278107" class="post-278107 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-featured category-privacy category-vulnerability tag-call-home tag-cryptography tag-encryption tag-ics tag-iot tag-privacy tag-progressive tag-scada tag-snapshot tag-tls">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '12']); return true;" href="https://nakedsecurity.sophos.com/2015/01/20/cheaper-car-insurance-dongle-could-lead-to-a-privacy-wreck/" title="Permalink to &quot;Cheaper car insurance&quot; dongle could lead to a privacy wreck" rel="bookmark">"Cheaper car insurance" dongle could lead to a privacy wreck</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on January 20, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/20/cheaper-car-insurance-dongle-could-lead-to-a-privacy-wreck/#comments">23 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/20/cheaper-car-insurance-dongle-could-lead-to-a-privacy-wreck/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '12']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/snapshot-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="snapshot-250" /></a>
+		<p>You'd hope that the developers of a dongle that tracks your driving paid a lot of attention to computer security. </p>
+<p>Or, in fact, any attention at all...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F20%2Fcheaper-car-insurance-dongle-could-lead-to-a-privacy-wreck%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=%22Cheaper%20car%20insurance%22%20dongle%20could%20lead%20to%20a%20privacy%20wreck&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F20%2Fcheaper-car-insurance-dongle-could-lead-to-a-privacy-wreck%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-277556" class="post-277556 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-law-order category-privacy tag-david-cameron tag-encryption tag-facetime tag-imessage tag-snapchat tag-surveillance tag-tor tag-whatsapp">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '13']); return true;" href="https://nakedsecurity.sophos.com/2015/01/14/david-cameron-wants-to-ban-encrypted-apps-like-imessage-and-whatsapp/" title="Permalink to David Cameron wants to ban encrypted apps like iMessage and Whatsapp" rel="bookmark">David Cameron wants to ban encrypted apps like iMessage and Whatsapp</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 14, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/14/david-cameron-wants-to-ban-encrypted-apps-like-imessage-and-whatsapp/#comments">24 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/14/david-cameron-wants-to-ban-encrypted-apps-like-imessage-and-whatsapp/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '13']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/david-cameron_ss_250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="David Cameron. Image courtesy of Frederic Legrand - COMEO / Shutterstock." /></a>
+		<p>In the wake of the Paris attacks, UK Prime Minister David Cameron is targeting encrypted communications that governments can't read. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F14%2Fdavid-cameron-wants-to-ban-encrypted-apps-like-imessage-and-whatsapp%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=David%20Cameron%20wants%20to%20ban%20encrypted%20apps%20like%20iMessage%20and%20Whatsapp&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F14%2Fdavid-cameron-wants-to-ban-encrypted-apps-like-imessage-and-whatsapp%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-276994" class="post-276994 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-featured category-privacy category-security-threats category-vulnerability tag-api tag-encryption tag-moonpig">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '14']); return true;" href="https://nakedsecurity.sophos.com/2015/01/07/moonpig-takes-down-customer-data-leaking-apps-after-vulnerability-found/" title="Permalink to Moonpig takes down customer data-leaking apps after vulnerability found" rel="bookmark">Moonpig takes down customer data-leaking apps after vulnerability found</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/nslisavaas/" title="View all posts by Lisa Vaas">Lisa Vaas</a></span> on January 7, 2015		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2015/01/07/moonpig-takes-down-customer-data-leaking-apps-after-vulnerability-found/#comments">2 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2015/01/07/moonpig-takes-down-customer-data-leaking-apps-after-vulnerability-found/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '14']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/01/moonpig-250.jpg?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Greetings card maker Moonpig takes down customer data-leaking apps" /></a>
+		<p>A developer says he disclosed a security hole to Moonpig and finally went public after it went unfixed for 17 months. </p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F07%2Fmoonpig-takes-down-customer-data-leaking-apps-after-vulnerability-found%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Moonpig%20takes%20down%20customer%20data-leaking%20apps%20after%20vulnerability%20found&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2015%2F01%2F07%2Fmoonpig-takes-down-customer-data-leaking-apps-after-vulnerability-found%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-274057" class="post-274057 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-privacy tag-encryption tag-facebook tag-imessage tag-messages tag-messaging tag-whatsapp tag-whisper">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '15']); return true;" href="https://nakedsecurity.sophos.com/2014/11/19/whatsapp-now-provides-end-to-end-encryption-by-default-for-messages/" title="Permalink to Whatsapp now provides end-to-end encryption by default for messages" rel="bookmark">Whatsapp now provides end-to-end encryption by default for messages</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/leemunsonblog/" title="View all posts by Lee Munson">Lee Munson</a></span> on November 19, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/11/19/whatsapp-now-provides-end-to-end-encryption-by-default-for-messages/#comments">2 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/11/19/whatsapp-now-provides-end-to-end-encryption-by-default-for-messages/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '15']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/11/whatsapp_250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="Whatsapp" /></a>
+		<p>A new update to the Android version of WhatsApp includes an unexpected but pleasant surprise – end-to-end encryption that is enabled by default.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F19%2Fwhatsapp-now-provides-end-to-end-encryption-by-default-for-messages%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Whatsapp%20now%20provides%20end-to-end%20encryption%20by%20default%20for%20messages&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F19%2Fwhatsapp-now-provides-end-to-end-encryption-by-default-for-messages%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-273951" class="post-273951 post type-post status-publish format-standard has-post-thumbnail hentry category-featured category-privacy tag-encryption tag-forward-secrecy tag-hsts tag-https tag-naked-security">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '16']); return true;" href="https://nakedsecurity.sophos.com/2014/11/18/naked-security-bids-farewell-to-http/" title="Permalink to Naked Security bids farewell to HTTP" rel="bookmark">Naked Security bids farewell to HTTP</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/markstockley/" title="View all posts by Mark Stockley">Mark Stockley</a></span> on November 18, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/11/18/naked-security-bids-farewell-to-http/#comments">22 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/11/18/naked-security-bids-farewell-to-http/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '16']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/11/pcullis-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="pcullis-250" /></a>
+		<p>From now on Naked Security will only be available over secure, encrypted HTTPS with Strict Transport Security and Forward Secrecy.</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F18%2Fnaked-security-bids-farewell-to-http%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Naked%20Security%20bids%20farewell%20to%20HTTP&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F18%2Fnaked-security-bids-farewell-to-http%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-273965" class="post-273965 post type-post status-publish format-standard has-post-thumbnail hentry category-data-loss category-facebook category-featured category-privacy tag-business tag-encryption tag-facebook tag-forward-secrecy tag-https tag-linkedin tag-obama tag-surveillance tag-zuckerberg">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '17']); return true;" href="https://nakedsecurity.sophos.com/2014/11/18/would-you-allow-access-to-facebook-at-work/" title="Permalink to Would you allow access to Facebook at Work? [POLL]" rel="bookmark">Would you allow access to Facebook at Work? [POLL]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on November 18, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/11/18/would-you-allow-access-to-facebook-at-work/#comments">8 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/11/18/would-you-allow-access-to-facebook-at-work/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '17']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/11/fbeng-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>What would you say to a variant of Facebook that you could use at work?</p>
+<p>And not just *at* work, but *for* work?</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F18%2Fwould-you-allow-access-to-facebook-at-work%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=Would%20you%20allow%20access%20to%20Facebook%20at%20Work%3F%20%5BPOLL%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F11%2F18%2Fwould-you-allow-access-to-facebook-at-work%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-272413" class="post-272413 post type-post status-publish format-standard has-post-thumbnail hentry category-apple category-data-loss category-featured category-ios-mobile category-malware category-microsoft category-privacy category-video category-vulnerability category-windows tag-60-sec-security tag-60-second-security tag-60-seconds tag-60ss tag-apple tag-bluetooth tag-encryption tag-exploit tag-fix-it tag-get-safe-online tag-house-arrest tag-ios tag-ios-8-1 tag-microsoft tag-poodle tag-sandworm tag-update tag-vulnerability-2">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '18']); return true;" href="https://nakedsecurity.sophos.com/2014/10/25/poodles-sandworms-and-getting-safe-online-60-sec-security-video/" title="Permalink to POODLEs, Sandworms and getting safe online - 60 Sec Security [VIDEO]" rel="bookmark">POODLEs, Sandworms and getting safe online - 60 Sec Security [VIDEO]</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on October 25, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/10/25/poodles-sandworms-and-getting-safe-online-60-sec-security-video/#respond">Leave a comment</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/10/25/poodles-sandworms-and-getting-safe-online-60-sec-security-video/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '18']); return true;"><img width="115" height="115" src="https://i1.wp.com/sophosnews.files.wordpress.com/2014/06/60ss-video-250.png?crop=39px%2C38px%2C169px%2C169px&amp;resize=115%2C115" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>The week's security news, turned into an entertaining lesson, turned into a 1-minute video.</p>
+<p>Enjoy...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F10%2F25%2Fpoodles-sandworms-and-getting-safe-online-60-sec-security-video%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=POODLEs%2C%20Sandworms%20and%20getting%20safe%20online%20-%2060%20Sec%20Security%20%5BVIDEO%5D&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F10%2F25%2Fpoodles-sandworms-and-getting-safe-online-60-sec-security-video%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="post-271637" class="post-271637 post type-post status-publish format-standard has-post-thumbnail hentry category-cryptography category-data-loss category-featured tag-aes tag-authentication tag-cbc tag-cipher-block-chaining tag-data-leakage tag-encryption tag-google tag-mac tag-poodle tag-ssl">
+	<h2 class="entry-title"><a onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '19']); return true;" href="https://nakedsecurity.sophos.com/2014/10/16/poodle-attack-takes-bytes-out-of-your-data-heres-what-to-do/" title="Permalink to POODLE attack takes bytes out of your encrypted data - here&#039;s what to do" rel="bookmark">POODLE attack takes bytes out of your encrypted data - here's what to do</a></h2>
+	<div class="entry-meta">
+			by <span class="author vcard"><a class="url fn n" href="https://nakedsecurity.sophos.com/author/pducklin/" title="View all posts by Paul Ducklin">Paul Ducklin</a></span> on October 16, 2014		<span class="meta-sep">|</span>
+			<a href="https://nakedsecurity.sophos.com/2014/10/16/poodle-attack-takes-bytes-out-of-your-data-heres-what-to-do/#comments">18 Comments</a>				</div><!-- .entry-meta -->
+
+	<div class="entry-summary">
+		<a href="https://nakedsecurity.sophos.com/2014/10/16/poodle-attack-takes-bytes-out-of-your-data-heres-what-to-do/" onclick="if (_gaq) _gaq.push(['ns._trackEvent', 'The Loop', 'Visit another Naked Security page', '19']); return true;"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/10/poodle-250.png?w=115&amp;h=115&amp;crop=1" class="attachment-list-post wp-post-image" alt="" /></a>
+		<p>Heartbleed, Shellshock, Sandworm...and now POODLE.</p>
+<p>It's a security hole that could let crooks read your encrypted web traffic.</p>
+<p>Paul Ducklin takes you through how it works, and what you can do to avoid it, in plain (well, plain-ish) English...</p>
+	</div><!-- .entry-summary -->
+
+	<div class="entry-sharing">
+		<iframe
+			class="facebook"
+			scrolling="no"
+			frameborder="0"
+			src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F10%2F16%2Fpoodle-attack-takes-bytes-out-of-your-data-heres-what-to-do%2F&layout=button_count&height=20&width=107"></iframe>
+		<iframe
+			class="twitter"
+			scrolling="no"
+			frameborder="0"
+			src="https://platform.twitter.com/widgets/tweet_button.1340179658.html#_=1342793744748&amp;count=horizontal&amp;id=twitter-widget-12&amp;lang=en&amp;original_referer=http%3A%2F%2Fnakedsecurity.sophos.com%2F&amp;size=m&amp;text=POODLE%20attack%20takes%20bytes%20out%20of%20your%20encrypted%20data%20-%20here%27s%20what%20to%20do&amp;url=https%3A%2F%2Fnakedsecurity.sophos.com%2F2014%2F10%2F16%2Fpoodle-attack-takes-bytes-out-of-your-data-heres-what-to-do%2F" class="twitter-share-button twitter-count-horizontal" title="Twitter Tweet Button"></iframe>
+	</div>
+</div><!-- #post-## -->
+
+	
+
+<div id="nav-below" class="navigation">
+	<div class="nav-previous"><a href="https://nakedsecurity.sophos.com/tag/encryption/page/2/" >Older posts</a></div>
+	<div class="nav-next"></div>
+</div><!-- #nav-below -->
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+
+<li id="facebook-likebox-3" class="widget-container widget_facebook_likebox"><iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2FSophosSecurity&#038;width=200&#038;height=110&#038;colorscheme=light&#038;show_faces=false&#038;stream=false&#038;show_border=true&#038;header=false&#038;force_wall=false" scrolling="no" frameborder="0" style="border: none; overflow: hidden; width: 200px;  height: 110px; background: #fff"></iframe></li><li id="text-2" class="widget-container widget_text">			<div class="textwidget"><a style="display:block;overflow:hidden;margin-bottom:1em;" href="https://www.sophos.com/en-us/lp/sevendeadlysins.aspx?cmp=701j0000000ZaL9AAK#email"><img src="//sophosnews.files.wordpress.com/2015/04/ns_un_encrypted_email_246x500.png"></a></div>
+		</li><li class="sophos-widget related">
+                <h2>Related articles</h2>
+                <ul>
+                    <li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/04/24/wi-fi-security-software-chokes-on-network-names-opens-potential-hole-for-hackers/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/04/wifi-250.png?w=115" class="attachment-115x115 wp-post-image" alt="wifi-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/04/24/wi-fi-security-software-chokes-on-network-names-opens-potential-hole-for-hackers/">Wi-Fi security software chokes on network names, opens potential hole for hackers</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/03/26/serious-security-china-internet-network-information-center-in-tls-certificate-blunder/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/03/tls-250.png?w=115" class="attachment-115x115 wp-post-image" alt="" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/03/26/serious-security-china-internet-network-information-center-in-tls-certificate-blunder/">Serious Security: China Internet Network Information Center in TLS certificate blunder</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2015/02/20/the-lenovo-superfish-controversy-what-you-need-to-know/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2015/02/sf-2501.png?w=115" class="attachment-115x115 wp-post-image" alt="sf-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2015/02/20/the-lenovo-superfish-controversy-what-you-need-to-know/">Lenovo "Superfish" controversy - what you need to know</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2014/09/25/mozilla-fixes-phishing-friendly-cryptographic-bug-in-firefox-and-thunderbird/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2014/09/moz-250.png?w=115" class="attachment-115x115 wp-post-image" alt="moz-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2014/09/25/mozilla-fixes-phishing-friendly-cryptographic-bug-in-firefox-and-thunderbird/">Mozilla fixes "phishing friendly" cryptographic bug in Firefox and Thunderbird</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/11/24/twitter-joins-the-forward-secrecy-club-for-added-resistance-to-surveillance/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/11/padlock-250.png?w=115" class="attachment-115x115 wp-post-image" alt="padlock-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/11/24/twitter-joins-the-forward-secrecy-club-for-added-resistance-to-surveillance/">Twitter joins the "forward secrecy" club for added resistance to surveillance</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/08/06/anatomy-of-a-cryptographic-oracle-understanding-and-mitigating-the-breach-attack/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/08/breach-250.png?w=115" class="attachment-115x115 wp-post-image" alt="breach-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/08/06/anatomy-of-a-cryptographic-oracle-understanding-and-mitigating-the-breach-attack/">Anatomy of a cryptographic oracle - understanding (and mitigating) the BREACH attack</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2013/03/16/has-https-finally-been-cracked/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2013/03/ts-cracked-250.png?w=115" class="attachment-115x115 wp-post-image" alt="ts-cracked-250" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2013/03/16/has-https-finally-been-cracked/">Has HTTPS finally been cracked? Five researchers deal SSL/TLS a biggish blow...</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2012/02/14/https-enabled-by-default-nice-one-twitter/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2012/02/twitter-private-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="HTTPS enabled by default - nice one Twitter!" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2012/02/14/https-enabled-by-default-nice-one-twitter/">HTTPS enabled by default - nice one Twitter!</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2011/08/24/twitter-https-by-default/"><img width="115" height="115" src="https://sophosnews.files.wordpress.com/2011/08/kutcher-thumb.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Twitter starts rolling out HTTPS by default - good news for security and Ashton Kutcher" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2011/08/24/twitter-https-by-default/">Twitter starts rolling out HTTPS by default - good news for security and Ashton Kutcher</a></h3>
+</div>
+</li><li><div>
+    <a href="https://nakedsecurity.sophos.com/2009/08/05/guest-blog-viral-ssids-wiphishing-wireless-reputation/"><img width="115" height="38" src="https://sophosnews.files.wordpress.com/2009/08/free-public-wifi.jpg?w=115" class="attachment-115x115 wp-post-image" alt="Image (4) free-public-wifi.jpg for post 14667" /></a>
+    <h3><a href="https://nakedsecurity.sophos.com/2009/08/05/guest-blog-viral-ssids-wiphishing-wireless-reputation/">Viral SSIDs, WiPhishing and wireless reputation</a></h3>
+</div>
+</li>                </ul>
+            </li><li class="sophos-widget free-tools">
+                <h2>Free tools</h2>
+                <ul>
+                    <li class="android">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">Mobile Security for Android</a></h3>
+            <ul class="features">
+                <li>Scans apps for malware</li>
+                <li>Remote lock and wipe </li>
+                <li>Detection from the cloud</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-mobile-security-free-edition.aspx?utm_source=Mobile&utm_medium=Web-banner&utm_campaign=Mobile-NakSec-CL-SMSRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="mac">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">Antivirus for Mac</a></h3>
+            <ul class="features">
+                <li>Clears viruses and Trojans</li>
+                <li>Stops all threats, even new ones</li>
+                <li>Installs easily and runs quietly</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-FreeMacAVRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="virus">
+            <h3><a
+			href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">Virus Removal Tool</a></h3>
+            <ul class="features">
+                <li>Removes viruses and rootkits</li>
+                <li>Windows XP SP2 and up</li>
+                <li>Works with existing antivirus</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/virus-removal-tool.aspx?utm_source=Non-campaign&utm_medium=Web-banner&utm_campaign=NakSec-CL-SVRTRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="utm">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">UTM Home Edition</a></h3>
+            <ul class="features">
+                <li>Fully-equipped UTM</li>
+                <li>Network, web, mail and VPN</li>
+                <li>Protects 50 IP addresses</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-home-edition.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-CL-UTMFreeHomeRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>
+        <li class="firewall">
+            <h3><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">UTM Essential Firewall</a></h3>
+            <ul class="features">
+                <li>Network security for business</li>
+                <li>No user/IP limitations</li>
+                <li>Upgrade to full UTM</li>
+                <li><strong>Completely free</strong></li>
+                <li><a href="http://www.sophos.com/en-us/products/free-tools/sophos-utm-essential-firewall.aspx?utm_source=NWT&utm_medium=Web-banner&utm_campaign=NWT-NakSec-WB-UTMFreeEssRightRail&cmp=70130000001xGqlAAE">More...</a></li>
+            </ul>
+        </li>                </ul>
+            </li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+		</div><!-- #main -->
+	<br class="clear">
+	</div><!-- #wrapper -->
+
+	<div id="footer">
+		<div class="content">
+		<div class="top">
+			<ul class="us">
+				<li><a rel="nofollow" href="/about">About Naked Security</a></li>
+				<li><a rel="nofollow" href="http://www.sophos.com/en-us/about-us.aspx">About Sophos</a></li>
+				<li><a rel="nofollow" href="/authors">Our Authors</a></li>
+				<li><a rel="nofollow" href="/about/#awards">Awards</a></li>
+				<li><a rel="nofollow" href="/about/#tip">Got a story for us?</a></li>
+			</ul>
+			<ul class="social">
+				<li><a rel="nofollow" class="facebook"
+					href="http://www.facebook.com/SophosSecurity"
+					title="Join over 170,000 people in our Facebook community"></a></li>
+				<li><a rel="nofollow" class="twitter" href="https://twitter.com/#!/NakedSecurity"
+					title="Follow our team of security experts on Twitter"></a></li>
+				<li><a rel="nofollow" class="youtube" href="http://www.youtube.com/user/SophosLabs"
+					title="Take a look at the SophosLabs YouTube channel"></a></li>
+				<li><a rel="nofollow" class="gplus"
+                    href="https://plus.google.com/107512733802574023624"
+					title="Join our Google+ community"></a></li>
+				<li><a rel="nofollow" class="linkedin"
+					href="http://www.linkedin.com/groups?about=&amp;gid=4023910"
+					title="Join the Naked Security discussion group on LinkedIn"></a></li>
+				<li><a rel="nofollow" class="rss" href="/feed"
+					title="Subscribe to our RSS feed"></a></li>
+				<li><a rel="nofollow" class="email"
+					href="https://nakedsecurity.sophos.com/about/#newsletter"
+					title="Sign up to our daily newsletter"></a></li>
+			</ul>
+		</div>
+		<div class="column naked-security">
+				<div class="labels">
+					<h3>Tags</h3>
+					<div class="tags">
+						<div style="overflow:hidden"><a href='https://nakedsecurity.sophos.com/tag/adobe/' class='tag-link-29691' title='222 topics' style='font-size: 10.578947368421pt;'>Adobe</a>
+<a href='https://nakedsecurity.sophos.com/tag/android/' class='tag-link-641922' title='251 topics' style='font-size: 11.5pt;'>Android</a>
+<a href='https://nakedsecurity.sophos.com/tag/apple/' class='tag-link-291' title='412 topics' style='font-size: 15.552631578947pt;'>Apple</a>
+<a href='https://nakedsecurity.sophos.com/tag/chet-chat/' class='tag-link-43155110' title='177 topics' style='font-size: 8.7368421052632pt;'>chet chat</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-breach/' class='tag-link-67372' title='193 topics' style='font-size: 9.4736842105263pt;'>data breach</a>
+<a href='https://nakedsecurity.sophos.com/tag/data-loss-2/' class='tag-link-36277601' title='161 topics' style='font-size: 8pt;'>data loss</a>
+<a href='https://nakedsecurity.sophos.com/tag/encryption/' class='tag-link-6474' title='167 topics' style='font-size: 8.3684210526316pt;'>Encryption</a>
+<a href='https://nakedsecurity.sophos.com/tag/exploit/' class='tag-link-78999' title='349 topics' style='font-size: 14.078947368421pt;'>Exploit</a>
+<a href='https://nakedsecurity.sophos.com/tag/facebook/' class='tag-link-81819' title='924 topics' style='font-size: 22pt;'>Facebook</a>
+<a href='https://nakedsecurity.sophos.com/tag/fbi/' class='tag-link-68079' title='172 topics' style='font-size: 8.5526315789474pt;'>FBI</a>
+<a href='https://nakedsecurity.sophos.com/tag/general/' class='tag-link-54' title='712 topics' style='font-size: 19.789473684211pt;'>General</a>
+<a href='https://nakedsecurity.sophos.com/tag/google/' class='tag-link-81' title='413 topics' style='font-size: 15.552631578947pt;'>Google</a>
+<a href='https://nakedsecurity.sophos.com/tag/hacking/' class='tag-link-1816' title='360 topics' style='font-size: 14.447368421053pt;'>hacking</a>
+<a href='https://nakedsecurity.sophos.com/tag/iphone/' class='tag-link-106595' title='169 topics' style='font-size: 8.3684210526316pt;'>iPhone</a>
+<a href='https://nakedsecurity.sophos.com/tag/it/' class='tag-link-3072' title='252 topics' style='font-size: 11.5pt;'>IT</a>
+<a href='https://nakedsecurity.sophos.com/tag/malware/' class='tag-link-15593' title='827 topics' style='font-size: 21.078947368421pt;'>Malware</a>
+<a href='https://nakedsecurity.sophos.com/tag/microsoft/' class='tag-link-637' title='373 topics' style='font-size: 14.631578947368pt;'>Microsoft</a>
+<a href='https://nakedsecurity.sophos.com/tag/password/' class='tag-link-37471' title='196 topics' style='font-size: 9.4736842105263pt;'>password</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch/' class='tag-link-51546' title='200 topics' style='font-size: 9.6578947368421pt;'>Patch</a>
+<a href='https://nakedsecurity.sophos.com/tag/patch-tuesday/' class='tag-link-341283' title='168 topics' style='font-size: 8.3684210526316pt;'>Patch Tuesday</a>
+<a href='https://nakedsecurity.sophos.com/tag/phishing/' class='tag-link-21013' title='214 topics' style='font-size: 10.210526315789pt;'>phishing</a>
+<a href='https://nakedsecurity.sophos.com/tag/privacy/' class='tag-link-3279' title='451 topics' style='font-size: 16.289473684211pt;'>Privacy</a>
+<a href='https://nakedsecurity.sophos.com/tag/scam/' class='tag-link-26037' title='311 topics' style='font-size: 13.157894736842pt;'>Scam</a>
+<a href='https://nakedsecurity.sophos.com/tag/spam/' class='tag-link-652' title='670 topics' style='font-size: 19.421052631579pt;'>Spam</a>
+<a href='https://nakedsecurity.sophos.com/tag/twitter/' class='tag-link-599182' title='400 topics' style='font-size: 15.184210526316pt;'>Twitter</a>
+<a href='https://nakedsecurity.sophos.com/tag/video/' class='tag-link-412' title='200 topics' style='font-size: 9.6578947368421pt;'>Video</a>
+<a href='https://nakedsecurity.sophos.com/tag/vulnerability-2/' class='tag-link-35821136' title='521 topics' style='font-size: 17.394736842105pt;'>vulnerability</a>
+<a href='https://nakedsecurity.sophos.com/tag/web/' class='tag-link-151' title='226 topics' style='font-size: 10.763157894737pt;'>web</a>
+<a href='https://nakedsecurity.sophos.com/tag/web-2-0/' class='tag-link-3161794' title='301 topics' style='font-size: 12.973684210526pt;'>web 2.0</a>
+<a href='https://nakedsecurity.sophos.com/tag/www/' class='tag-link-4326' title='161 topics' style='font-size: 8pt;'>WWW</a></div>					</div>
+					<h3>Categories</h3>
+					<ul class="categories">
+							<li class="cat-item cat-item-641922"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/android/" >Android</a> (1,250)
+</li>
+	<li class="cat-item cat-item-291"><a href="https://nakedsecurity.sophos.com/category/organisations/apple/" >Apple</a> (2,338)
+</li>
+	<li class="cat-item cat-item-103188"><a href="https://nakedsecurity.sophos.com/category/audio-and-video/" >Audio and Video</a> (28)
+</li>
+	<li class="cat-item cat-item-8224"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/blackberry/" >BlackBerry</a> (134)
+</li>
+	<li class="cat-item cat-item-115992436"><a href="https://nakedsecurity.sophos.com/category/security-threats/denial-of-service-security-threats/" >Denial of Service</a> (774)
+</li>
+	<li class="cat-item cat-item-81819"><a href="https://nakedsecurity.sophos.com/category/social-networks/facebook/" >Facebook</a> (3,237)
+</li>
+	<li class="cat-item cat-item-35890"><a href="https://nakedsecurity.sophos.com/category/featured/" >Featured</a> (19,550)
+</li>
+	<li class="cat-item cat-item-1143"><a href="https://nakedsecurity.sophos.com/category/technologies/web-browsers/internet-explorer/" >Internet Explorer</a> (714)
+</li>
+	<li class="cat-item cat-item-610"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/linux/" >Linux</a> (173)
+</li>
+	<li class="cat-item cat-item-637"><a href="https://nakedsecurity.sophos.com/category/organisations/microsoft/" >Microsoft</a> (2,045)
+</li>
+	<li class="cat-item cat-item-120"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/" >Mobile</a> (1,675)
+</li>
+	<li class="cat-item cat-item-3015"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/" >Operating Systems</a> (72)
+</li>
+	<li class="cat-item cat-item-3766"><a href="https://nakedsecurity.sophos.com/category/organisations/oracle/" >Oracle</a> (341)
+</li>
+	<li class="cat-item cat-item-78541"><a href="https://nakedsecurity.sophos.com/category/organisations/" >Organisations</a> (67)
+</li>
+	<li class="cat-item cat-item-2438"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/os-x/" >OS X</a> (686)
+</li>
+	<li class="cat-item cat-item-3279"><a href="https://nakedsecurity.sophos.com/category/privacy/" >Privacy</a> (8,086)
+</li>
+	<li class="cat-item cat-item-36117"><a href="https://nakedsecurity.sophos.com/category/social-networks/" >Social networks</a> (2,678)
+</li>
+	<li class="cat-item cat-item-1070"><a href="https://nakedsecurity.sophos.com/category/organisations/sony/" >Sony</a> (69)
+</li>
+	<li class="cat-item cat-item-7859"><a href="https://nakedsecurity.sophos.com/category/technologies/" >Technologies</a> (37)
+</li>
+	<li class="cat-item cat-item-1"><a href="https://nakedsecurity.sophos.com/category/uncategorized/" >Uncategorized</a> (376)
+</li>
+	<li class="cat-item cat-item-412"><a href="https://nakedsecurity.sophos.com/category/audio-and-video/video/" >Video</a> (1,000)
+</li>
+	<li class="cat-item cat-item-273435"><a href="https://nakedsecurity.sophos.com/category/weekly-summary/" >Weekly Summary</a> (583)
+</li>
+	<li class="cat-item cat-item-800"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/windows/" >Windows</a> (917)
+</li>
+	<li class="cat-item cat-item-48230381"><a href="https://nakedsecurity.sophos.com/category/technologies/operating-systems/mobile/windows-phone-mobile/" >Windows phone</a> (116)
+</li>
+	<li class="cat-item cat-item-259940823"><a href="https://nakedsecurity.sophos.com/category/organisations/yahoo-organisations/" >Yahoo</a> (35)
+</li>
+					</ul>
+				</div>
+				<div class="months">
+					<h3>Archives by month</h3>
+					<ul>
+							<li><a href='https://nakedsecurity.sophos.com/2015/05/'>May 2015</a>&nbsp;(6)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/04/'>April 2015</a>&nbsp;(107)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/03/'>March 2015</a>&nbsp;(112)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/02/'>February 2015</a>&nbsp;(108)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2015/01/'>January 2015</a>&nbsp;(109)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/12/'>December 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/11/'>November 2014</a>&nbsp;(87)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/10/'>October 2014</a>&nbsp;(98)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/09/'>September 2014</a>&nbsp;(93)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/08/'>August 2014</a>&nbsp;(90)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/07/'>July 2014</a>&nbsp;(104)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/06/'>June 2014</a>&nbsp;(97)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/05/'>May 2014</a>&nbsp;(101)</li>
+	<li><a href='https://nakedsecurity.sophos.com/2014/04/'>April 2014</a>&nbsp;(96)</li>
+					</ul>
+					<p><a href="/archive/">More...</a></p>
+				</div> <!-- .monthly -->
+			</div> <!-- .column -->
+			<div class="column sophos">
+				<h3>Download some free tools</h3>
+				<ul class="tools">
+					<li><strong><a href="http://www.sophos.com/en-us/products/free-tools/sophos-antivirus-for-mac-home-edition.aspx">Free anti-virus for your Mac</a></strong><small>Free antivirus that works simply and beautifully</small></li>
+       				<li><strong><a href="https://play.google.com/store/apps/details?id=com.sophos.smsec">Free Android protection</a></strong><small>Free antivirus for all your Android devices</small></li>
+					<li><a href="http://www.sophos.com/en-us/products/free-tools.aspx">More free tools...</a></li>
+				</ul>
+				<h3>Take a look at our products</h3>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/endpoint.aspx">Endpoint</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/encryption.aspx">Encryption</a></li>
+				</ul>
+				<ul class="products">
+			   	 	<li><a href="http://www.sophos.com/en-us/products/mobile.aspx">Mobile</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/network.aspx">Network</a></li>
+				</ul>
+				<ul class="products">
+					<li><a href="http://www.sophos.com/en-us/products/email.aspx">Email</a></li>
+					<li><a href="http://www.sophos.com/en-us/products/web.aspx">Web</a></li>
+				</ul>
+				<p>Try out our <a href="http://www.sophos.com/en-us/products/free-trials.aspx">free trials</a> and <a href="http://www.sophos.com/en-us/products/product-demos.aspx">demos</a></p>
+				<h3>Investigate the threats</h3>
+				<ul class="threats">
+					<li><a href="http://www.sophos.com/en-us/threat-center/threat-analyses/viruses-and-spyware.aspx">Virus and spyware analyses</a></li>
+					<li><a href="http://www.sophos.com/en-us/threat-center.aspx">Threat Center</a></li>
+					<li><a href="http://www.sophos.com/en-us/why-sophos/our-people/inside-sophoslabs.aspx">Inside SophosLabs</a></li>
+				</ul>
+			</div>
+		</div> <!-- .content -->
+		<div id="blog-footer" role="contentinfo">
+			<div id="colophon">
+				<ul>
+					<li>&copy; 1997-2015 Sophos Ltd. All rights reserved</li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/blogs.html">Legal</a></li>
+					<li><a rel="nofollow" href="http://www.sophos.com/legal/privacy.html">Privacy</a></li>
+                    <li><a rel="nofollow" href="/cookies-and-scripts/">Cookies</a></li>
+                    <li><a rel="nofollow" href="/disclaimers/">Disclaimers</a></li>
+                    <li><a href="https://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom"><img src="https://s0.wp.com/wp-content/themes/vip/plugins/vip-do-not-include-on-wpcom/vip-powered-wpcom/images/vip-powered-light-small.png" width="187" height="26" alt="Powered by WordPress.com VIP"></a></li>
+				</ul>
+			</div><!-- #colophon -->
+		</div><!-- #blog-footer -->
+	</div> <!-- #footer -->
+<!-- wpcom_wp_footer -->
+	<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcomVipAnalytics = {"is_404":"0","is_home":"0","is_single":"0","is_front_page":"0","is_archive":"1","percentToTrack":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-includes/js/jquery/ui/jquery.ui.core.min.js,/wp-content/mu-plugins/2-vip/js/vip-analytics.js?m=1429298047j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="//stats.wp.com/w.js?46" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'15254721','blog_tz':'1','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'15254721','v':'wpcom','tz':'1','user_id':'0','subd':'sophosnews'}]);
+function st_vt() {var x=document.createElement("img");x.src="https://pixel.wp.com/g.gif?blog=15254721&v=wpcomvt&tz=1&user_id=0&subd=sophosnews&rand="+Math.random();}
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXRThKbHcwXTdETWI1alhvb1oseHImN101ZFpEakVpYjlQYVFLYzBaVHRtPz0wXS9bZHRhUiZdL1ktblJJSlV6LjQuX0NDd1BfZGdEaj96LnJ3cCZYcj1PTm1yTEZCbFQ2Q2tUOCwuYlFlN3wtd0dqbzBmfFJCaEJDUFdJRDRiV2diPVFrPUVhQkItTF0mYTklaCw3K1cyRW9bP3BSQ349QllLWWNWUUg3TFFFfDg0RjluZTRdSTBZfHBPaEt8SHYldT15M1VXVj04JWN6SkJ6LVM/N21rRnl6VzVqWkRJVmZhQWc='}]);
+_stq.push([ 'clickTrackerInit', '15254721', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
+<!--
+	generated in 0.265 seconds
+	95575 bytes batcached for 300 seconds
+-->
